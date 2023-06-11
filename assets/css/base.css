@@ -1,0 +1,232 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color: rgb(55, 182, 255);
+    --text-view: rgb(86, 65, 179);
+    --border-color: #dbdbdb;
+    --height-header: 120px;
+    --height-navbar: 34.4px;
+    --height__with-search: calc(var(--height-header) - var(--height-navbar));
+    --blue-color: rgb(66, 116, 255);
+    --star-color-gold: #FFCE3E;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+/* Test */
+.grid__column-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+
+.grid__column-2-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    width: 20%;
+}
+
+.grid__column-2-5 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+
+.grid__column-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+}
+
+/* Animation */
+@keyframes  fadeIn{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes  growth{
+    from {
+        transform: scale(var(--growth-from));
+    }
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
+
+/* Modal */
+#modal {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    /* display: flex; */
+    animation: fadeIn linear 0.1s;
+    z-index: 1;
+    display: none;
+}
+
+#modal__overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(57, 87, 121, 0.4);
+    z-index: 1;
+}
+
+.modal__body {
+    --growth-from: 0.7;
+    --growth-to: 1;
+    margin: auto;
+    z-index: 1;
+    /* animation: growth linear 0.1s; */
+}
+
+/* Button Style */
+.btn {
+    min-width: 124px;
+    height: 36px;
+    text-decoration: none;
+    border-radius: 3px;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 350;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn.btn__primary {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.btn.btn__normal {
+    background-color: var(--white-color);
+    color: var(--text-color);
+}
+
+.btn.btn__normal:hover {
+    background-color: rgba(55, 182, 255, 0.2);
+}
+
+/* .btn.btn__disabled {
+    color: #949494;
+    cursor: default;
+    background-color: #c3c3c3;
+} */
+
+.btn.btn__size-s {
+    height: 28px;
+    font-size: 1.1rem;
+    width: 158px;
+}
+
+/* Selection */
+.select-input {
+    height: 36px;
+    padding: 0 12px;
+    border-radius: 2px;
+    min-width: 200px;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;;
+}
+
+.select-input--price {
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+.select-input--price-down {
+    position: relative;
+    top: 1px;
+    color: rgb(124, 121, 121);
+    font-size: 1.3rem;
+}
+
+.select-input--list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 67%;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    list-style: none;
+    padding: 10px 16px;
+    display: none;
+    z-index: 1;
+}
+
+.select-input:hover .select-input--list {
+    display: block;
+    cursor: pointer;
+}
+
+/* .select-input:focus ~ .select-input--list {
+    display: block;
+} */
+
+.select-input--list::before {
+    content: "";
+    position: absolute;
+    border-width: 8px 100px;
+    border-style: solid;
+    border-color: transparent;
+    top: -15%;
+    left: 0;
+}
+
+.select-input--item {
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-align: left;
+}
+
+.select-input--item-link {
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    padding: 4px 0;
+}
+
+.select-input--item-link:hover {
+    color: var(--primary-color);
+}
+

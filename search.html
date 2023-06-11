@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="/assets/css/search.css">
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+        $(function(){
+          $("#header").load("/header.html"); 
+          $("#footer").load("/footer.html"); 
+        });
+    </script> 
+</head>
+<body>
+    <div id="header"></div>
+    <div class="search__app-wrap">
+        <div class="search__app">
+            <div class="search__filter-wrap">
+                <div class="search__filter-heading">
+                    <div class="search__filter-heading-title">
+                        <div class="search__filter-heading-title-icon"></div>
+                        Bộ Lọc
+                    </div>
+                    <div class="search__filter-heading-list-wrap">
+                        <div class="search__filter-heading-list">
+                            <div class="search__filter-heading-item">
+                                <span>APPLE</span>
+                                <span class="search__filter-heading-item-remove">x</span>
+                            </div>
+                            <div class="search__filter-heading-item">
+                                <span>ACER</span>
+                                <span class="search__filter-heading-item-remove">x</span>
+                            </div>
+                            <div class="search__filter-heading-item">
+                                <span>Trắng</span>
+                                <span class="search__filter-heading-item-remove">x</span>
+                            </div>
+                            <div class="search__filter-heading-item">
+                                <span>Xanh</span>
+                                <span class="search__filter-heading-item-remove">x</span>
+                            </div>
+                            <div class="search__filter-heading-item">
+                                <span>Gaming</span>
+                                <span class="search__filter-heading-item-remove">x</span>
+                            </div>
+                        </div>
+                        <div class="search__filter-remove">Xóa bộ lọc</div>
+                    </div>
+                </div>
+                <div class="search__filter-trademark-wrap">
+                    <div class="search__filter-trademark-title">Thương Hiệu</div>
+                    <div class="search__filter-trademark">
+                        <!-- Thêm search__filter-trademark-item-active và wrap__icon khi active -->
+                        <div class="search__filter-trademark-item search__filter-trademark-item-active">
+                            <span class="search__filter-trademark-item-title">APPLE</span>
+                            <span class="search__filter-trademark-item-icon">
+                                <i class="gg-check"></i>
+                            </span>
+                            <div class="wrap__icon"></div>
+                        </div>
+                        <div class="search__filter-trademark-item">
+                            <span class="search__filter-trademark-item-title">ASUS</span>
+                            <span class="search__filter-trademark-item-icon">
+                                <i class="gg-check"></i>
+                            </span>
+                            <!-- <div class="wrap__icon"></div> -->
+                        </div>
+                        <div class="search__filter-trademark-item search__filter-trademark-item-active">
+                            <span class="search__filter-trademark-item-title">ACER</span>
+                            <span class="search__filter-trademark-item-icon">
+                                <i class="gg-check"></i>
+                            </span>
+                            <div class="wrap__icon"></div>
+                        </div>
+                        <div class="search__filter-trademark-item">
+                            <span class="search__filter-trademark-item-title">DELL</span>
+                            <span class="search__filter-trademark-item-icon">
+                                <i class="gg-check"></i>
+                            </span>
+                            <!-- <div class="wrap__icon"></div> -->
+                        </div>
+                        <div class="search__filter-trademark-item">
+                            <span class="search__filter-trademark-item-title">HP</span>
+                            <span class="search__filter-trademark-item-icon">
+                                <i class="gg-check"></i>
+                            </span>
+                            <!-- <div class="wrap__icon"></div> -->
+                        </div>
+                        <div class="search__filter-trademark-item">
+                            <span class="search__filter-trademark-item-title">LENOVO</span>
+                            <span class="search__filter-trademark-item-icon">
+                                <i class="gg-check"></i>
+                            </span>
+                            <!-- <div class="wrap__icon"></div> -->
+                        </div>
+                        <div class="search__filter-trademark-item">
+                            <span class="search__filter-trademark-item-title">MSI</span>
+                            <span class="search__filter-trademark-item-icon">
+                                <i class="gg-check"></i>
+                            </span>
+                            <!-- <div class="wrap__icon"></div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="search__filter-color-wrap">
+                    <div class="search__filter-color-title">Màu Sắc</div>
+                    <div class="search__filter-color">
+                        <div class="search__filter-color-item">
+                            <span class="search__filter-color-item-title">Bạc</span>
+                            <span class="search__filter-color-item-icon">
+                                <i class="gg-check"></i>
+                            </span>
+                            <!-- <div class="wrap__icon"></div> -->
+                        </div>
+                        <div class="search__filter-color-item search__filter-color-item-active">
+                            <span class="search__filter-color-item-title">Trắng</span>
+                            <span class="search__filter-color-item-icon">
+                                <i class="gg-check"></i>
+                            </span>
+                            <div class="wrap__icon"></div>
+                        </div>
+                        <div class="search__filter-color-item search__filter-color-item-active">
+                            <span class="search__filter-color-item-title">Xanh</span>
+                            <span class="search__filter-color-item-icon">
+                                <i class="gg-check"></i>
+                            </span>
+                            <div class="wrap__icon"></div>
+                        </div>
+                        <div class="search__filter-color-item">
+                            <span class="search__filter-color-item-title">Đen</span>
+                            <span class="search__filter-color-item-icon">
+                                <i class="gg-check"></i>
+                            </span>
+                            <!-- <div class="wrap__icon"></div> -->
+                        </div>
+                        <div class="search__filter-color-item">
+                            <span class="search__filter-color-item-title">Hồng</span>
+                            <span class="search__filter-color-item-icon">
+                                <i class="gg-check"></i>
+                            </span>
+                            <!-- <div class="wrap__icon"></div> -->
+                        </div>
+                        <div class="search__filter-color-item">
+                            <span class="search__filter-color-item-title">Đỏ</span>
+                            <span class="search__filter-color-item-icon">
+                                <i class="gg-check"></i>
+                            </span>
+                            <!-- <div class="wrap__icon"></div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="search__filter-type-wrap">
+                    <div class="search__filter-type-title">Loại Laptop</div>
+                    <div class="search__filter-type">
+                        <div class="search__filter-type-item">
+                            <span class="search__filter-type-item-title">Văn Phòng</span>
+                            <span class="search__filter-type-item-icon">
+                                <i class="gg-check"></i>
+                            </span>
+                            <!-- <div class="wrap__icon"></div> -->
+                        </div>
+                        <div class="search__filter-type-item">
+                            <span class="search__filter-type-item-title">Sinh Viên</span>
+                            <span class="search__filter-type-item-icon">
+                                <i class="gg-check"></i>
+                            </span>
+                            <!-- <div class="wrap__icon"></div> -->
+                        </div>
+                        <div class="search__filter-type-item search__filter-type-item-active">
+                            <span class="search__filter-type-item-title">Gaming</span>
+                            <span class="search__filter-type-item-icon">
+                                <i class="gg-check"></i>
+                            </span>
+                            <div class="wrap__icon"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav__filter">
+                <span class="nav__filter__title">Sắp xếp theo</span>
+                <button class="nav__filter__btn btn btn__primary">Phổ biến</button>
+                <button class="nav__filter__btn btn btn__normal">Mới nhất</button>
+                <button class="nav__filter__btn btn btn__normal">Bán chạy</button>
+                <button class="nav__filter__btn btn btn__normal">Khuyến mãi</button>
+
+                <div class="select-input--price select-input">
+                    Giá
+                    <i class="select-input--price-down fas fa-chevron-down"></i>
+                    <!-- select option price -->
+                    <ul class="select-input--list">
+                        <li class="select-input--item">
+                            <a href="" class="select-input--item-link">Giá: Thấp đến cao</a>
+                        </li>
+                        <li class="select-input--item">
+                            <a href="" class="select-input--item-link">Giá: Cao đến thấp</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product__search">
+                <div class="product__search-trademark-list">
+                    <div class="product__search-trademark-item">
+                        <div class="product__search-trademark-item-link-wrap">
+                            <a href="" class="product__search-trademark-item-link">
+                                <div class="product__search-trademark__img">
+                                    <img src="https://lh3.googleusercontent.com/-HZQlZDyGIA40Ws4sEqSmNClZ83PMY6wAZ8xTWj9bCvE5kat_PSlebIvamlwsssBI1lif7PxKw4kvV84KYc=w500-rw" alt="">
+                                </div>
+                                <span class="product__search-trademark-name">Tai nghe không dây In-ear APPLE Airpod 2 MV7N2VN/A (Trắng/Hộp sạc dây)</span>
+                                <span class="product__search-trademark-quantity">Chỉ còn 3 sản phẩm</span>
+                            </a>
+                        </div>
+                        <div class="product__search-trademark-price">3.490.000 ₫</div>
+                    </div>
+                    <div class="product__search-trademark-item">
+                        <div class="product__search-trademark-item-link-wrap">
+                            <a href="" class="product__search-trademark-item-link">
+                                <div class="product__search-trademark__img">
+                                    <img src="https://lh3.googleusercontent.com/aeyPM2UtbG9AIrrqwpkvaUYwsCZLWgkayf8GsG_a0xDGuW6CoSod8_5DY64GPYFJyXmmM1-eMN46EqxE2eRk=rw-w300" alt="">
+                                    <div class="product__search-trademark__promotion">
+                                        <div class="product__search-trademark__promotion-title">TIẾT KIỆM</div>
+                                        <div class="product__search-trademark__promotion-value">230.000 ₫</div>
+                                    </div>
+                                </div>
+                                <span class="product__search-trademark-name">Bộ cấp nguồn/ Adaptor Apple</span>
+                                <span class="product__search-trademark-quantity">Chỉ còn 1 sản phẩm</span>
+                            </a>
+                        </div>
+                        <div class="product__search-trademark-price">
+                            <div class="product__search-trademark-price-new">947.000 ₫
+                                <span class="product__search-trademark-price-span">
+                                    free
+                                    <i class="fas fa-shipping-fast"></i>
+                                </span>
+                            </div>
+                            <div class="product__search-trademark-price-old">1.177.000 ₫</div>
+                        </div>
+                    </div>
+                    <div class="product__search-trademark-item">
+                        <div class="product__search-trademark-item-link-wrap">
+                            <a href="" class="product__search-trademark-item-link">
+                                <div class="product__search-trademark__img">
+                                    <img src="https://lh3.googleusercontent.com/9eLN7Yv5USoT6IKyJ6iMIFpJwYfEDj2qqBPU9AQWcEIitp1Hy5vUskvqNBsfFNg1ShLopOeOjOSSXQuuEtQv=rw-w300" alt="">
+                                    <div class="product__search-trademark__promotion">
+                                        <div class="product__search-trademark__promotion-title">TIẾT KIỆM</div>
+                                        <div class="product__search-trademark__promotion-value">2.100.000 ₫</div>
+                                    </div>
+                                </div>
+                                <span class="product__search-trademark-name">Laptop Apple MacBook Pro 2018 13.3inch MR9R2 (13.3inch/Core i5/8GB/Iris Plus 650/macOS)</span>
+                                <span class="product__search-trademark-quantity">Chỉ còn 2 sản phẩm</span>
+                            </a>
+                        </div>
+                        <div class="product__search-trademark-price">
+                            <div class="product__search-trademark-price-new">47.790.000 ₫
+                                <span class="product__search-trademark-price-span">
+                                    free
+                                    <i class="fas fa-shipping-fast"></i>
+                                </span>
+                            </div>
+                            <div class="product__search-trademark-price-old">49.890.000 ₫</div>
+                        </div>
+                    </div>
+                    <div class="product__search-trademark-item">
+                        <div class="product__search-trademark-item-link-wrap">
+                            <a href="" class="product__search-trademark-item-link">
+                                <div class="product__search-trademark__img">
+                                    <img src="https://lh3.googleusercontent.com/1OW-j9JRW1jI7qptEXJ3drkNDIVXJ-nXRe26Qz6wBRzZSWmOfNb_hgADA5sv-kt6gyi7gTN0sDLNrSwt5NByIZbbTDsmpt2u=rw-w300" alt="">
+                                </div>
+                                <span class="product__search-trademark-name">Pin dùng cho laptop Apple A1281 Zin</span>
+                                <span class="product__search-trademark-quantity">Chỉ còn 2 sản phẩm</span>
+                            </a>
+                        </div>
+                        <div class="product__search-trademark-price">
+                            <div class="product__search-trademark-price-new">1.813.000 ₫
+                                <span class="product__search-trademark-price-span">
+                                    free
+                                    <i class="fas fa-shipping-fast"></i>
+                                </span>
+                            </div>
+                            <div class="product__search-trademark-price-old"></div>
+                        </div>
+                    </div>
+                    <div class="product__search-trademark-item">
+                        <div class="product__search-trademark-item-link-wrap">
+                            <a href="" class="product__search-trademark-item-link">
+                                <div class="product__search-trademark__img">
+                                    <img src="https://lh3.googleusercontent.com/-yeePCT1rDs9QBerT_y2K2mz74Jn9bPIWpAmkNZ5TbgNZAY-KzK78TM_FM06zVM5hj6A5yUmMHYR8MW8eJjJPvuI4pwgG1tdZw=rw-w300" alt="">
+                                    <div class="product__search-trademark__promotion">
+                                        <div class="product__search-trademark__promotion-title">TIẾT KIỆM</div>
+                                        <div class="product__search-trademark__promotion-value">140.000 ₫</div>
+                                    </div>
+                                </div>
+                                <span class="product__search-trademark-name">Bút cảm ứng Apple Pencil MK0C2ZP/A</span>
+                                <span class="product__search-trademark-quantity">Chỉ còn 3 sản phẩm</span>
+                            </a>
+                        </div>
+                        <div class="product__search-trademark-price">
+                            <div class="product__search-trademark-price-new">2.560.000 ₫
+                                <span class="product__search-trademark-price-span">
+                                    free
+                                    <i class="fas fa-shipping-fast"></i>
+                                </span>
+                            </div>
+                            <div class="product__search-trademark-price-old">2.700.000 ₫</div>
+                        </div>
+                    </div>
+                    <div class="product__search-trademark-item">
+                        <div class="product__search-trademark-item-link-wrap">
+                            <a href="" class="product__search-trademark-item-link">
+                                <div class="product__search-trademark__img">
+                                    <img src="https://lh3.googleusercontent.com/-yeePCT1rDs9QBerT_y2K2mz74Jn9bPIWpAmkNZ5TbgNZAY-KzK78TM_FM06zVM5hj6A5yUmMHYR8MW8eJjJPvuI4pwgG1tdZw=rw-w300" alt="">
+                                    <div class="product__search-trademark__promotion">
+                                        <div class="product__search-trademark__promotion-title">TIẾT KIỆM</div>
+                                        <div class="product__search-trademark__promotion-value">140.000 ₫</div>
+                                    </div>
+                                </div>
+                                <span class="product__search-trademark-name">Bút cảm ứng Apple Pencil MK0C2ZP/A</span>
+                                <span class="product__search-trademark-quantity">Chỉ còn 3 sản phẩm</span>
+                            </a>
+                        </div>
+                        <div class="product__search-trademark-price">
+                            <div class="product__search-trademark-price-new">2.560.000 ₫
+                                <span class="product__search-trademark-price-span">
+                                    free
+                                    <i class="fas fa-shipping-fast"></i>
+                                </span>
+                            </div>
+                            <div class="product__search-trademark-price-old">2.700.000 ₫</div>
+                        </div>
+                    </div>
+                    <div class="product__search-trademark-item">
+                        <div class="product__search-trademark-item-link-wrap">
+                            <a href="" class="product__search-trademark-item-link">
+                                <div class="product__search-trademark__img">
+                                    <img src="https://lh3.googleusercontent.com/9eLN7Yv5USoT6IKyJ6iMIFpJwYfEDj2qqBPU9AQWcEIitp1Hy5vUskvqNBsfFNg1ShLopOeOjOSSXQuuEtQv=rw-w300" alt="">
+                                    <div class="product__search-trademark__promotion">
+                                        <div class="product__search-trademark__promotion-title">TIẾT KIỆM</div>
+                                        <div class="product__search-trademark__promotion-value">2.100.000 ₫</div>
+                                    </div>
+                                </div>
+                                <span class="product__search-trademark-name">Laptop Apple MacBook Pro 2018 13.3inch MR9R2 (13.3inch/Core i5/8GB/Iris Plus 650/macOS)</span>
+                                <span class="product__search-trademark-quantity">Chỉ còn 2 sản phẩm</span>
+                            </a>
+                        </div>
+                        <div class="product__search-trademark-price">
+                            <div class="product__search-trademark-price-new">47.790.000 ₫
+                                <span class="product__search-trademark-price-span">
+                                    free
+                                    <i class="fas fa-shipping-fast"></i>
+                                </span>
+                            </div>
+                            <div class="product__search-trademark-price-old">49.890.000 ₫</div>
+                        </div>
+                    </div>
+                    <div class="product__search-trademark-item">
+                        <div class="product__search-trademark-item-link-wrap">
+                            <a href="" class="product__search-trademark-item-link">
+                                <div class="product__search-trademark__img">
+                                    <img src="https://lh3.googleusercontent.com/-HZQlZDyGIA40Ws4sEqSmNClZ83PMY6wAZ8xTWj9bCvE5kat_PSlebIvamlwsssBI1lif7PxKw4kvV84KYc=w500-rw" alt="">
+                                </div>
+                                <span class="product__search-trademark-name">Tai nghe không dây In-ear APPLE Airpod 2 MV7N2VN/A (Trắng/Hộp sạc dây)</span>
+                                <span class="product__search-trademark-quantity">Chỉ còn 3 sản phẩm</span>
+                            </a>
+                        </div>
+                        <div class="product__search-trademark-price">3.490.000 ₫</div>
+                    </div>
+                    <div class="product__search-trademark-item">
+                        <div class="product__search-trademark-item-link-wrap">
+                            <a href="" class="product__search-trademark-item-link">
+                                <div class="product__search-trademark__img">
+                                    <img src="https://lh3.googleusercontent.com/aeyPM2UtbG9AIrrqwpkvaUYwsCZLWgkayf8GsG_a0xDGuW6CoSod8_5DY64GPYFJyXmmM1-eMN46EqxE2eRk=rw-w300" alt="">
+                                    <div class="product__search-trademark__promotion">
+                                        <div class="product__search-trademark__promotion-title">TIẾT KIỆM</div>
+                                        <div class="product__search-trademark__promotion-value">230.000 ₫</div>
+                                    </div>
+                                </div>
+                                <span class="product__search-trademark-name">Bộ cấp nguồn/ Adaptor Apple</span>
+                                <span class="product__search-trademark-quantity">Chỉ còn 1 sản phẩm</span>
+                            </a>
+                        </div>
+                        <div class="product__search-trademark-price">
+                            <div class="product__search-trademark-price-new">947.000 ₫
+                                <span class="product__search-trademark-price-span">
+                                    free
+                                    <i class="fas fa-shipping-fast"></i>
+                                </span>
+                            </div>
+                            <div class="product__search-trademark-price-old">1.177.000 ₫</div>
+                        </div>
+                    </div>
+                    <div class="product__search-trademark-item">
+                        <div class="product__search-trademark-item-link-wrap">
+                            <a href="" class="product__search-trademark-item-link">
+                                <div class="product__search-trademark__img">
+                                    <img src="https://lh3.googleusercontent.com/9eLN7Yv5USoT6IKyJ6iMIFpJwYfEDj2qqBPU9AQWcEIitp1Hy5vUskvqNBsfFNg1ShLopOeOjOSSXQuuEtQv=rw-w300" alt="">
+                                    <div class="product__search-trademark__promotion">
+                                        <div class="product__search-trademark__promotion-title">TIẾT KIỆM</div>
+                                        <div class="product__search-trademark__promotion-value">2.100.000 ₫</div>
+                                    </div>
+                                </div>
+                                <span class="product__search-trademark-name">Laptop Apple MacBook Pro 2018 13.3inch MR9R2 (13.3inch/Core i5/8GB/Iris Plus 650/macOS)</span>
+                                <span class="product__search-trademark-quantity">Chỉ còn 2 sản phẩm</span>
+                            </a>
+                        </div>
+                        <div class="product__search-trademark-price">
+                            <div class="product__search-trademark-price-new">47.790.000 ₫
+                                <span class="product__search-trademark-price-span">
+                                    free
+                                    <i class="fas fa-shipping-fast"></i>
+                                </span>
+                            </div>
+                            <div class="product__search-trademark-price-old">49.890.000 ₫</div>
+                        </div>
+                    </div>
+                    <div class="product__search-trademark-item">
+                        <div class="product__search-trademark-item-link-wrap">
+                            <a href="" class="product__search-trademark-item-link">
+                                <div class="product__search-trademark__img">
+                                    <img src="https://lh3.googleusercontent.com/1OW-j9JRW1jI7qptEXJ3drkNDIVXJ-nXRe26Qz6wBRzZSWmOfNb_hgADA5sv-kt6gyi7gTN0sDLNrSwt5NByIZbbTDsmpt2u=rw-w300" alt="">
+                                </div>
+                                <span class="product__search-trademark-name">Pin dùng cho laptop Apple A1281 Zin</span>
+                                <span class="product__search-trademark-quantity">Chỉ còn 2 sản phẩm</span>
+                            </a>
+                        </div>
+                        <div class="product__search-trademark-price">
+                            <div class="product__search-trademark-price-new">1.813.000 ₫
+                                <span class="product__search-trademark-price-span">
+                                    free
+                                    <i class="fas fa-shipping-fast"></i>
+                                </span>
+                            </div>
+                            <div class="product__search-trademark-price-old"></div>
+                        </div>
+                    </div>
+                    <div class="product__search-trademark-item">
+                        <div class="product__search-trademark-item-link-wrap">
+                            <a href="" class="product__search-trademark-item-link">
+                                <div class="product__search-trademark__img">
+                                    <img src="https://lh3.googleusercontent.com/-yeePCT1rDs9QBerT_y2K2mz74Jn9bPIWpAmkNZ5TbgNZAY-KzK78TM_FM06zVM5hj6A5yUmMHYR8MW8eJjJPvuI4pwgG1tdZw=rw-w300" alt="">
+                                    <div class="product__search-trademark__promotion">
+                                        <div class="product__search-trademark__promotion-title">TIẾT KIỆM</div>
+                                        <div class="product__search-trademark__promotion-value">140.000 ₫</div>
+                                    </div>
+                                </div>
+                                <span class="product__search-trademark-name">Bút cảm ứng Apple Pencil MK0C2ZP/A</span>
+                                <span class="product__search-trademark-quantity">Chỉ còn 3 sản phẩm</span>
+                            </a>
+                        </div>
+                        <div class="product__search-trademark-price">
+                            <div class="product__search-trademark-price-new">2.560.000 ₫
+                                <span class="product__search-trademark-price-span">
+                                    free
+                                    <i class="fas fa-shipping-fast"></i>
+                                </span>
+                            </div>
+                            <div class="product__search-trademark-price-old">2.700.000 ₫</div>
+                        </div>
+                    </div>
+                    <div class="product__search-trademark-item">
+                        <div class="product__search-trademark-item-link-wrap">
+                            <a href="" class="product__search-trademark-item-link">
+                                <div class="product__search-trademark__img">
+                                    <img src="https://lh3.googleusercontent.com/-yeePCT1rDs9QBerT_y2K2mz74Jn9bPIWpAmkNZ5TbgNZAY-KzK78TM_FM06zVM5hj6A5yUmMHYR8MW8eJjJPvuI4pwgG1tdZw=rw-w300" alt="">
+                                    <div class="product__search-trademark__promotion">
+                                        <div class="product__search-trademark__promotion-title">TIẾT KIỆM</div>
+                                        <div class="product__search-trademark__promotion-value">140.000 ₫</div>
+                                    </div>
+                                </div>
+                                <span class="product__search-trademark-name">Bút cảm ứng Apple Pencil MK0C2ZP/A</span>
+                                <span class="product__search-trademark-quantity">Chỉ còn 3 sản phẩm</span>
+                            </a>
+                        </div>
+                        <div class="product__search-trademark-price">
+                            <div class="product__search-trademark-price-new">2.560.000 ₫
+                                <span class="product__search-trademark-price-span">
+                                    free
+                                    <i class="fas fa-shipping-fast"></i>
+                                </span>
+                            </div>
+                            <div class="product__search-trademark-price-old">2.700.000 ₫</div>
+                        </div>
+                    </div>
+                    <div class="product__search-trademark-item">
+                        <div class="product__search-trademark-item-link-wrap">
+                            <a href="" class="product__search-trademark-item-link">
+                                <div class="product__search-trademark__img">
+                                    <img src="https://lh3.googleusercontent.com/9eLN7Yv5USoT6IKyJ6iMIFpJwYfEDj2qqBPU9AQWcEIitp1Hy5vUskvqNBsfFNg1ShLopOeOjOSSXQuuEtQv=rw-w300" alt="">
+                                    <div class="product__search-trademark__promotion">
+                                        <div class="product__search-trademark__promotion-title">TIẾT KIỆM</div>
+                                        <div class="product__search-trademark__promotion-value">2.100.000 ₫</div>
+                                    </div>
+                                </div>
+                                <span class="product__search-trademark-name">Laptop Apple MacBook Pro 2018 13.3inch MR9R2 (13.3inch/Core i5/8GB/Iris Plus 650/macOS)</span>
+                                <span class="product__search-trademark-quantity">Chỉ còn 2 sản phẩm</span>
+                            </a>
+                        </div>
+                        <div class="product__search-trademark-price">
+                            <div class="product__search-trademark-price-new">47.790.000 ₫
+                                <span class="product__search-trademark-price-span">
+                                    free
+                                    <i class="fas fa-shipping-fast"></i>
+                                </span>
+                            </div>
+                            <div class="product__search-trademark-price-old">49.890.000 ₫</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="change__page-wrap">
+                <div class="change__page">
+                    <div class="change__page-item-pre"></div>
+                    <button class="change__page-item change__page-item-active">1</button>
+                    <button class="change__page-item">2</button>
+                    <button class="change__page-item">3</button>
+                    <button class="change__page-item">4</button>
+                    <button class="change__page-item">5</button>
+                    <div class="change__page-item-next"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>

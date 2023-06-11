@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap&subset=vietnamese" rel="stylesheet"> 
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate">
+                            Vào cửa hàng trên ứng dụng Shop Laptop
+                            <div class="header__qr">
+                                <img src="/assets/img/qr_code.png" alt="QR Code" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="" class="header__qr-link">
+                                        <img src="/assets/img/google_play.png" alt="Google Play" class="header__app-download">
+                                    </a>
+                                    <a href="" class="header__qr-link">
+                                        <img src="/assets/img/app_store.png" alt="App Store" class="header__app-download">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-title--no-pointer">
+                                Kết nối
+                                <a href="" class="navbar__icon-link">
+                                    <i class="navbar__item-icon fab fa-facebook"></i>
+                                </a>
+                                <a href="" class="navbar__icon-link">
+                                    <i class="navbar__item-icon fab fa-google-plus"></i> 
+                                </a>
+                            </span>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__notify-fadein">
+                            <a href="" class="navbar__icon-link">
+                                <i class="navbar__item-icon far fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông Báo Mới Nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify--item header__notify--item-viewed">
+                                        <a href="" class="header__notify--link">
+                                            <img src="/assets/img/girl.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Hàng chính hãng tuyệt cú mèo. Có còn hàng khác không anh chị ơi</span>
+                                                <span class="header__notify-title">Mô tả của sản phẩm. Hàng việt nam chất lượng cao không độc hại</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify--item header__notify--item-viewed">
+                                        <a href="" class="header__notify--link">
+                                            <img src="/assets/img/girl.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Hàng chính hãng tuyệt cú mèo. Có còn hàng khác không anh chị ơi</span>
+                                                <span class="header__notify-title">Mô tả của sản phẩm. Hàng việt nam chất lượng cao không độc hại</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify--item">
+                                        <a href="" class="header__notify--link">
+                                            <img src="/assets/img/girl.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Hàng chính hãng tuyệt cú mèo. Có còn hàng khác không anh chị ơi</span>
+                                                <span class="header__notify-title">Mô tả của sản phẩm. Hàng việt nam chất lượng cao không độc hại</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify--item">
+                                        <a href="" class="header__notify--link">
+                                            <img src="/assets/img/girl.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Hàng chính hãng tuyệt cú mèo. Có còn hàng khác không anh chị ơi</span>
+                                                <span class="header__notify-title">Mô tả của sản phẩm. Hàng việt nam chất lượng cao không độc hại</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="navbar__icon-link">
+                                <i class="navbar__item-icon far fa-question-circle"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <!-- Usu li when not loggin -->
+                        <li id="click__register" class="header__navbar-item header__navbar-item--strong show__register">Đăng ký</li>
+                        <li id="click__login" class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
+                        <!-- <li class="header__navbar-item header__navbar--user">
+                            <img src="/assets/img/girl.jpg" alt="" class="img__navbar--user">
+                            <span class="span_navbar--user">Đăng Khoa</span>
+    
+                            <ul class="navbar__user-list">
+                                <li class="navbar__user-list-item">
+                                    <a href="">Tài khoản của tôi</a>
+                                </li>
+                                <li class="navbar__user-list-item">
+                                    <a href="">Địa chỉ của tôi</a>
+                                </li>
+                                <li class="navbar__user-list-item">
+                                    <a href="">Đơn mua</a>
+                                </li>
+                                <li class="navbar__user-list-item navbar__user-list-item--separate">
+                                    <a href="">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                </nav>
+                <!-- Header with search -->
+                <div class="header_with-search">
+                    <div class="header__logo">
+                        <a href="/" class="backhome__with-logo">
+                            <span class="logo-icon-header">
+                                <i class="fas fa-laptop"></i>
+                            </span>
+                            <span class="backhome__with-logo-name">Shop Laptop</span>
+                        </a>
+                    </div>
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm trong Shop">
+                            <!-- Search history -->
+                            <div class="header__search-histoy">
+                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">Phụ kiện Dell</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Asus</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Laptop HP</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Ổ cứng di động</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="/search.html" class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </a>
+                    </div>
+                    <!-- cart -->
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-luggage-cart"></i>
+                            <span class="header__cart-notice">3</span>
+                            <!-- Use class  header__cart-list--no-cart When no item in cart-->
+                            <div class="header__cart-list">
+                                <img src="/assets/img/nocart.png" alt="" class="img__no-cart">
+                                <span class="span__no-cart-msg">Chưa có sản phẩm</span>
+    
+                                <!-- Cart item -->
+                                <h3 class="header__cart-heading">Sản phẩm đã thêm</h3>
+                                <ul class="header__cart-list-item">
+                                    <li class="cart-list-item">
+                                        <img src="https://lh3.googleusercontent.com/oUobPUzGSekGyL_BguyYTG0KyZWrBYEzqAUIxOGC27jMy1aHLZOx-a7_ctsuER1Q5_1QomtUyiCcYD2PHjk=rw" alt="" class="img__cart-item">
+                                        <div class="cart-list-item--info">
+                                            <div class="cart-list-item-head">
+                                                <h4 class="cart-list-item-title">Laptop M4900 Laptop M4900 Laptop M4900 Laptop M4900 Laptop M4900 Laptop M4900 Laptop M4900 Laptop M4900 Laptop M4900 Laptop M4900</h4>
+                                                <div class="cart-item-info-wrap">
+                                                    <span class="cart-item-price">12.000.000đ</span>
+                                                    <span class="cart-item-multiply">x</span>
+                                                    <span class="cart-item-quantity">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="cart-list-item-body">
+                                                <span class="cart-item-description">Phân loại: Bạc</span>
+                                                <span class="cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cart-list-item">
+                                        <img src="https://lh3.googleusercontent.com/oUobPUzGSekGyL_BguyYTG0KyZWrBYEzqAUIxOGC27jMy1aHLZOx-a7_ctsuER1Q5_1QomtUyiCcYD2PHjk=rw" alt="" class="img__cart-item">
+                                        <div class="cart-list-item--info">
+                                            <div class="cart-list-item-head">
+                                                <h4 class="cart-list-item-title">Laptop M4900</h4>
+                                                <div class="cart-item-info-wrap">
+                                                    <span class="cart-item-price">12.000.000đ</span>
+                                                    <span class="cart-item-multiply">x</span>
+                                                    <span class="cart-item-quantity">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="cart-list-item-body">
+                                                <span class="cart-item-description">Phân loại: Bạc</span>
+                                                <span class="cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cart-list-item">
+                                        <img src="https://lh3.googleusercontent.com/oUobPUzGSekGyL_BguyYTG0KyZWrBYEzqAUIxOGC27jMy1aHLZOx-a7_ctsuER1Q5_1QomtUyiCcYD2PHjk=rw" alt="" class="img__cart-item">
+                                        <div class="cart-list-item--info">
+                                            <div class="cart-list-item-head">
+                                                <h4 class="cart-list-item-title">Laptop M4900</h4>
+                                                <div class="cart-item-info-wrap">
+                                                    <span class="cart-item-price">12.000.000đ</span>
+                                                    <span class="cart-item-multiply">x</span>
+                                                    <span class="cart-item-quantity">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="cart-list-item-body">
+                                                <span class="cart-item-description">Phân loại: Bạc</span>
+                                                <span class="cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cart-list-item">
+                                        <img src="https://lh3.googleusercontent.com/oUobPUzGSekGyL_BguyYTG0KyZWrBYEzqAUIxOGC27jMy1aHLZOx-a7_ctsuER1Q5_1QomtUyiCcYD2PHjk=rw" alt="" class="img__cart-item">
+                                        <div class="cart-list-item--info">
+                                            <div class="cart-list-item-head">
+                                                <h4 class="cart-list-item-title">Laptop M4900</h4>
+                                                <div class="cart-item-info-wrap">
+                                                    <span class="cart-item-price">12.000.000đ</span>
+                                                    <span class="cart-item-multiply">x</span>
+                                                    <span class="cart-item-quantity">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="cart-list-item-body">
+                                                <span class="cart-item-description">Phân loại: Bạc</span>
+                                                <span class="cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cart-list-item">
+                                        <img src="https://lh3.googleusercontent.com/oUobPUzGSekGyL_BguyYTG0KyZWrBYEzqAUIxOGC27jMy1aHLZOx-a7_ctsuER1Q5_1QomtUyiCcYD2PHjk=rw" alt="" class="img__cart-item">
+                                        <div class="cart-list-item--info">
+                                            <div class="cart-list-item-head">
+                                                <h4 class="cart-list-item-title">Laptop M4900</h4>
+                                                <div class="cart-item-info-wrap">
+                                                    <span class="cart-item-price">12.000.000đ</span>
+                                                    <span class="cart-item-multiply">x</span>
+                                                    <span class="cart-item-quantity">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="cart-list-item-body">
+                                                <span class="cart-item-description">Phân loại: Bạc</span>
+                                                <span class="cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cart-list-item">
+                                        <img src="https://lh3.googleusercontent.com/oUobPUzGSekGyL_BguyYTG0KyZWrBYEzqAUIxOGC27jMy1aHLZOx-a7_ctsuER1Q5_1QomtUyiCcYD2PHjk=rw" alt="" class="img__cart-item">
+                                        <div class="cart-list-item--info">
+                                            <div class="cart-list-item-head">
+                                                <h4 class="cart-list-item-title">Laptop M4900</h4>
+                                                <div class="cart-item-info-wrap">
+                                                    <span class="cart-item-price">12.000.000đ</span>
+                                                    <span class="cart-item-multiply">x</span>
+                                                    <span class="cart-item-quantity">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="cart-list-item-body">
+                                                <span class="cart-item-description">Phân loại: Bạc</span>
+                                                <span class="cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cart-list-item">
+                                        <img src="https://lh3.googleusercontent.com/oUobPUzGSekGyL_BguyYTG0KyZWrBYEzqAUIxOGC27jMy1aHLZOx-a7_ctsuER1Q5_1QomtUyiCcYD2PHjk=rw" alt="" class="img__cart-item">
+                                        <div class="cart-list-item--info">
+                                            <div class="cart-list-item-head">
+                                                <h4 class="cart-list-item-title">Laptop M4900</h4>
+                                                <div class="cart-item-info-wrap">
+                                                    <span class="cart-item-price">12.000.000đ</span>
+                                                    <span class="cart-item-multiply">x</span>
+                                                    <span class="cart-item-quantity">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="cart-list-item-body">
+                                                <span class="cart-item-description">Phân loại: Bạc</span>
+                                                <span class="cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cart-list-item">
+                                        <img src="https://lh3.googleusercontent.com/oUobPUzGSekGyL_BguyYTG0KyZWrBYEzqAUIxOGC27jMy1aHLZOx-a7_ctsuER1Q5_1QomtUyiCcYD2PHjk=rw" alt="" class="img__cart-item">
+                                        <div class="cart-list-item--info">
+                                            <div class="cart-list-item-head">
+                                                <h4 class="cart-list-item-title">Laptop M4900</h4>
+                                                <div class="cart-item-info-wrap">
+                                                    <span class="cart-item-price">12.000.000đ</span>
+                                                    <span class="cart-item-multiply">x</span>
+                                                    <span class="cart-item-quantity">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="cart-list-item-body">
+                                                <span class="cart-item-description">Phân loại: Bạc</span>
+                                                <span class="cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cart-list-item">
+                                        <img src="https://lh3.googleusercontent.com/oUobPUzGSekGyL_BguyYTG0KyZWrBYEzqAUIxOGC27jMy1aHLZOx-a7_ctsuER1Q5_1QomtUyiCcYD2PHjk=rw" alt="" class="img__cart-item">
+                                        <div class="cart-list-item--info">
+                                            <div class="cart-list-item-head">
+                                                <h4 class="cart-list-item-title">Laptop M4900</h4>
+                                                <div class="cart-item-info-wrap">
+                                                    <span class="cart-item-price">12.000.000đ</span>
+                                                    <span class="cart-item-multiply">x</span>
+                                                    <span class="cart-item-quantity">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="cart-list-item-body">
+                                                <span class="cart-item-description">Phân loại: Bạc</span>
+                                                <span class="cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cart-list-item">
+                                        <img src="https://lh3.googleusercontent.com/oUobPUzGSekGyL_BguyYTG0KyZWrBYEzqAUIxOGC27jMy1aHLZOx-a7_ctsuER1Q5_1QomtUyiCcYD2PHjk=rw" alt="" class="img__cart-item">
+                                        <div class="cart-list-item--info">
+                                            <div class="cart-list-item-head">
+                                                <h4 class="cart-list-item-title">Laptop M4900</h4>
+                                                <div class="cart-item-info-wrap">
+                                                    <span class="cart-item-price">12.000.000đ</span>
+                                                    <span class="cart-item-multiply">x</span>
+                                                    <span class="cart-item-quantity">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="cart-list-item-body">
+                                                <span class="cart-item-description">Phân loại: Bạc</span>
+                                                <span class="cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                
+                                <a href="/cart_item.html" class="btn btn__primary  btn__cart-select-all">Xem giỏ hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </header>
+    </div>
+    <div id="modal">
+        <div id="modal__overlay">
+        </div>
+        <div class="modal__body">
+            <!-- Register Form -->
+            <div id="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth__header">
+                        <h3 class="auth__heading">Đăng ký</h3>
+                        <span class="login__switch-btn">Đăng Nhập</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth__form-group">
+                            <input type="text" class="auth__form-input" placeholder="Email/Tên đăng nhập của bạn">
+                        </div>
+                        <div class="auth__form-group">
+                            <input type="password" class="auth__form-input" placeholder="Mật khẩu của bạn">
+                        </div>
+                        <div class="auth__form-group">
+                            <input type="password" class="auth__form-input" placeholder="Nhập lại mật khẩu">
+                        </div>
+                    </div>
+                    <div class="auth-form__rules">
+                        <p class="auth-form__policy-text">
+                            Bằng việc Đăng ký, bạn đã đồng ý về 
+                            <a href="" class="auth-form__policy-link">Điều khoản dịch vụ</a> &
+                            <a href="" class="auth-form__policy-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+                    <div class="auth-form__controls">
+                        <button class="btn btn__normal auth-form__controls-btn">TRỞ LẠI</button>
+                        <button class="btn btn__primary">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+                <div class="auth-form__socials">
+                    <a href="" class="btn btn--with-icon btn__size-s auth-form__socials-fb">
+                        <i class="fab fa-facebook-square"></i>  
+                        <span class="text__social">Kết nối với Facebook</span>
+                    </a>
+                    <a href="" class="btn btn--with-icon btn__size-s auth-form__socials-mail">
+                        <i class="fab fa-google"></i>
+                        <span class="text__social">Kết nối với Google</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Login Form -->
+            <div id="login-form">
+                <div class="auth-form__container">
+                    <div class="auth__header">
+                        <h3 class="auth__heading">Đăng Nhập</h3>
+                        <span class="auth__switch-btn">Đăng Ký</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth__form-group">
+                            <input type="text" class="auth__form-input" placeholder="Email/Tên đăng nhập của bạn">
+                        </div>
+                        <div class="auth__form-group">
+                            <input type="password" class="auth__form-input" placeholder="Mật khẩu của bạn">
+                        </div>
+                    </div>
+                    <div class="login-form__help">
+                        <a href="" class="login-form__help-link help__forget-pass">
+                            Quên mật khẩu
+                        </a>
+                        <span class="login__seperate">|</span>
+                        <a href="" class="login-form__help-link">
+                            Cần trợ giúp?
+                        </a>
+                    </div>
+                    <div class="auth-form__controls">
+                        <button class="btn btn__normal auth-form__controls-btn">TRỞ LẠI</button>
+                        <button class="btn btn__primary">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+                <div class="auth-form__socials">
+                    <a href="" class="btn btn--with-icon btn__size-s auth-form__socials-fb">
+                        <i class="fab fa-facebook-square"></i>  
+                        <span class="text__social">Đăng nhập bằng Facebook</span>
+                    </a>
+                    <a href="" class="btn btn--with-icon btn__size-s auth-form__socials-mail">
+                        <i class="fab fa-google"></i>
+                        <span class="text__social">Đăng nhập bằng Google</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/js/header.js"></script>
+</body>
+</html>

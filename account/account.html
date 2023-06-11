@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/account.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap&subset=vietnamese" rel="stylesheet"> 
+
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+        $(function(){
+          $("#header").load("/header.html");
+          $("#footer").load("/footer.html"); 
+        });
+    </script> 
+</head>
+<body>
+    <div id="header"></div>
+    <!-- Content -->
+    <div class="account__content-wrap">
+        <div class="account__content">
+            <!-- Thông tin bên trái ứng với column 2 -->
+            <div class="account__content-2">
+                <!-- Tên và ảnh -->
+                <div class="user__info">
+                    <span class="user__info-img">
+                        <img src="https://cdn-codel.nitrocdn.com/tcXEInFIuLZpqJskgGRZMcSPgOtEVlpt/assets/static/optimized/rev-520b63a/wp-content/uploads/2021/10/anh-gai-xinh-toc-dai-deo-kinh-2k4-1.jpg" alt="">
+                    </span>
+                    <div class="user__info-name">
+                        Mai Dang Khoa
+                        <a class="user__info-edit-wrap">
+                            <span class="user__info-edit-icon">
+                                <i class="fas fa-edit"></i>
+                            </span>
+                            Sửa Hồ Sơ
+                        </a>
+                    </div>
+                </div>
+                <div class="my__account">
+                    <span class="my__account-icon">
+                        <i class="far fa-user"></i>
+                    </span>
+                    Tài Khoản Của Tôi
+                </div>
+                <div class="wrap__account-info">
+                    <a href="/account/account.html" class="account-info--title account__title-blue-active">Hồ Sơ</a>
+                    <a href="/account/address.html" class="account-address-title">Địa Chỉ</a>
+                    <a href="/account/change_pass.html" class="account-edit-pass">Đổi Mật Khẩu</a>
+                </div>
+                <a href="/account/orders.html" class="wrap__purchase-orders">
+                    <span class="purchase-orders-icon">
+                        <i class="far fa-file-alt"></i>
+                    </span>
+                    Quản Lý Đơn Hàng
+                </a>
+                <a href="/account/notify.html" class="wrap__notify">
+                    <span class="notify-icon">
+                        <i class="far fa-bell"></i>
+                    </span>
+                    Thông Báo
+                </a>
+            </div>
+            <div class="account__content-10">
+                <div class="title__info-account-wrap">
+                    <h2 class="title__info-account">Hồ Sơ Của Tôi</h2>
+                    <h3 class="title__info-account-note">Quản lý thông tin hồ sơ để bảo mật tài khoản</h3>
+                </div>
+                <div class="account__info-wrap">
+                    <div class="account__info-wrap-7">
+                        <div class="account__name-wrap">
+                            <span class="account__name-title">Tên Đăng Nhập</span>
+                            <span class="account__name-input">dangkhoa2000</span>
+                        </div>
+                        <div class="user__name-wrap">
+                            <span class="user__name-title">Tên</span>
+                            <input type="text" class="user__name-input" value="Mai Dang Khoa" placeholder="Nhập tên của bạn">
+                        </div>
+                        <div class="user__email-wrap">
+                            <span class="user__email-title">Email</span>
+                            <div class="user__email-edit-wrap">
+                                me************@gmail.com
+                                <span class="user__email-edit account__active">Thay Đổi</span>
+                                <span class="user__email-edit">Thêm</span>
+                            </div>
+                        </div>
+                        <div class="user__phone-wrap">
+                            <span class="user__phone-title">Số Điện Thoại</span>
+                            <div class="user__phone-edit-wrap">
+                                085*****89
+                                <span class="user__phone-edit account__active">Thay Đổi</span>
+                                <span class="user__phone-edit">Thêm</span>
+                            </div>
+                        </div>
+                        <div class="user__sex-wrap">
+                            <span class="user__sex-title">Giới Tính</span>
+                            <div class="user__sex-radio">
+                                <div class="sex__wrap">
+                                    <input type="radio" name="sex" id="boy">
+                                    Nam
+                                </div>
+                                <div class="sex__wrap">
+                                    <input type="radio" name="sex" id="girl">
+                                    Nữ
+                                </div>
+                                <div class="sex__wrap">
+                                    <input type="radio" name="sex" id="other">
+                                    Khác
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user__birthday-wrap">
+                            <span class="user__birthday-title">Ngày Sinh</span>
+                            <div class="birthday__wrap">
+                                <div class="birthday__date">
+                                    <div class="birthday__date-wrap">
+                                        1
+                                        <span class="birthday__date-icon birthday__icon-active">
+                                            <i class="gg-chevron-down"></i>
+                                        </span>
+                                        <span class="birthday__date-icon">
+                                            <i class="gg-chevron-up"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <ul class="list__birthday-date">
+                                    <li class="item__birthday-date">1</li>
+                                    <li class="item__birthday-date">2</li>
+                                    <li class="item__birthday-date">3</li>
+                                    <li class="item__birthday-date">4</li>
+                                    <li class="item__birthday-date">5</li>
+                                    <li class="item__birthday-date">6</li>
+                                    <li class="item__birthday-date">7</li>
+                                    <li class="item__birthday-date">8</li>
+                                    <li class="item__birthday-date">9</li>
+                                    <li class="item__birthday-date">10</li>
+                                    <li class="item__birthday-date">11</li>
+                                    <li class="item__birthday-date">12</li>
+                                    <li class="item__birthday-date">13</li>
+                                    <li class="item__birthday-date">14</li>
+                                    <li class="item__birthday-date">15</li>
+                                    <li class="item__birthday-date">16</li>
+                                    <li class="item__birthday-date">17</li>
+                                    <li class="item__birthday-date">18</li>
+                                    <li class="item__birthday-date">19</li>
+                                    <li class="item__birthday-date">20</li>
+                                    <li class="item__birthday-date">21</li>
+                                    <li class="item__birthday-date">22</li>
+                                    <li class="item__birthday-date">23</li>
+                                    <li class="item__birthday-date">24</li>
+                                    <li class="item__birthday-date">25</li>
+                                    <li class="item__birthday-date">26</li>
+                                    <li class="item__birthday-date">27</li>
+                                    <li class="item__birthday-date">28</li>
+                                    <li class="item__birthday-date">29</li>
+                                    <li class="item__birthday-date">30</li>
+                                    <li class="item__birthday-date">31</li>
+                                </ul>
+                                <div class="birthday__month">
+                                    <div class="birthday__month-wrap">
+                                        Tháng 1
+                                        <span class="birthday__month-icon birthday__icon-active">
+                                            <i class="gg-chevron-down"></i>
+                                        </span>
+                                        <span class="birthday__month-icon">
+                                            <i class="gg-chevron-up"></i>
+                                        </span>
+                                    </div>
+                                    <ul class="list__birthday-month">
+                                        <li class="item__birthday-month">Tháng 1</li>
+                                        <li class="item__birthday-month">Tháng 2</li>
+                                        <li class="item__birthday-month">Tháng 3</li>
+                                        <li class="item__birthday-month">Tháng 4</li>
+                                        <li class="item__birthday-month">Tháng 5</li>
+                                        <li class="item__birthday-month">Tháng 6</li>
+                                        <li class="item__birthday-month">Tháng 7</li>
+                                        <li class="item__birthday-month">Tháng 8</li>
+                                        <li class="item__birthday-month">Tháng 9</li>
+                                        <li class="item__birthday-month">Tháng 10</li>
+                                        <li class="item__birthday-month">Tháng 11</li>
+                                        <li class="item__birthday-month">Tháng 12</li>
+                                    </ul>
+                                </div>
+                                <div class="birthday__year">
+                                    <div class="birthday__year-wrap">
+                                        1990
+                                        <span class="birthday__year-icon birthday__icon-active">
+                                            <i class="gg-chevron-down"></i>
+                                        </span>
+                                        <span class="birthday__year-icon">
+                                            <i class="gg-chevron-up"></i>
+                                        </span>
+                                    </div>
+                                    <ul class="list__birthday-year">
+                                        <li class="item__birthday-year">1970</li>
+                                        <li class="item__birthday-year">1971</li>
+                                        <li class="item__birthday-year">1972</li>
+                                        <li class="item__birthday-year">1973</li>
+                                        <li class="item__birthday-year">1974</li>
+                                        <li class="item__birthday-year">1975</li>
+                                        <li class="item__birthday-year">1976</li>
+                                        <li class="item__birthday-year">1977</li>
+                                        <li class="item__birthday-year">1978</li>
+                                        <li class="item__birthday-year">1979</li>
+                                        <li class="item__birthday-year">1980</li>
+                                        <li class="item__birthday-year">1981</li>
+                                        <li class="item__birthday-year">1982</li>
+                                        <li class="item__birthday-year">1983</li>
+                                        <li class="item__birthday-year">1984</li>
+                                        <li class="item__birthday-year">1985</li>
+                                        <li class="item__birthday-year">1986</li>
+                                        <li class="item__birthday-year">1987</li>
+                                        <li class="item__birthday-year">1988</li>
+                                        <li class="item__birthday-year">1989</li>
+                                        <li class="item__birthday-year">1990</li>
+                                        <li class="item__birthday-year">1991</li>
+                                        <li class="item__birthday-year">1992</li>
+                                        <li class="item__birthday-year">1993</li>
+                                        <li class="item__birthday-year">1994</li>
+                                        <li class="item__birthday-year">1995</li>
+                                        <li class="item__birthday-year">1996</li>
+                                        <li class="item__birthday-year">1997</li>
+                                        <li class="item__birthday-year">1998</li>
+                                        <li class="item__birthday-year">1999</li>
+                                        <li class="item__birthday-year">2000</li>
+                                        <li class="item__birthday-year">2001</li>
+                                        <li class="item__birthday-year">2002</li>
+                                        <li class="item__birthday-year">2003</li>
+                                        <li class="item__birthday-year">2004</li>
+                                        <li class="item__birthday-year">2005</li>
+                                        <li class="item__birthday-year">2006</li>
+                                        <li class="item__birthday-year">2007</li>
+                                        <li class="item__birthday-year">2008</li>
+                                        <li class="item__birthday-year">2009</li>
+                                        <li class="item__birthday-year">2010</li>
+                                        <li class="item__birthday-year">2011</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn__primary btn__save-info-account">Lưu</button>
+                    </div>
+                    <div class="account__info-wrap-3">
+                        <div class="account__info-wrap-img">
+                            <span class="img__account">
+                                <img src="https://cdn-codel.nitrocdn.com/tcXEInFIuLZpqJskgGRZMcSPgOtEVlpt/assets/static/optimized/rev-520b63a/wp-content/uploads/2021/10/anh-gai-xinh-toc-dai-deo-kinh-2k4-1.jpg" alt="">
+                            </span>
+                            <button class="btn btn__normal btn__choose-img">Chọn Ảnh</button>
+                            <span class="note__choose-img">Dung lượng file tối đa 1MB</span>
+                            <span class="note__choose-img">Định dạng: .jpg, .png</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>

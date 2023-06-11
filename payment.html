@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./assets/css/payment.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap&subset=vietnamese" rel="stylesheet"> 
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+        $(function(){
+          
+          $("#footer").load("footer.html"); 
+        });
+    </script> 
+</head>
+<body>
+    <!-- Phần header -->
+    <div class="payment__header">
+        <div class="header__navbar-payment-wrap">
+            <div class="header__navbar-payment">
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate">
+                        Vào cửa hàng trên ứng dụng Shop Laptop
+                        <div class="header__qr">
+                            <img src="./assets/img/qr_code.png" alt="QR Code" class="header__qr-img">
+                            <div class="header__qr-apps">
+                                <a href="" class="header__qr-link">
+                                    <img src="./assets/img/google_play.png" alt="Google Play" class="header__app-download">
+                                </a>
+                                <a href="" class="header__qr-link">
+                                    <img src="./assets/img/app_store.png" alt="App Store" class="header__app-download">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__navbar-item">
+                        <span class="header__navbar-title--no-pointer">
+                            Kết nối
+                            <a href="" class="navbar__icon-link">
+                                <i class="navbar__item-icon fab fa-facebook"></i>
+                            </a>
+                            <a href="" class="navbar__icon-link">
+                                <i class="navbar__item-icon fab fa-google-plus"></i> 
+                            </a>
+                        </span>
+                    </li>
+                </ul>
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item header__notify-fadein">
+                        <a href="" class="navbar__icon-link">
+                            <i class="navbar__item-icon far fa-bell"></i>
+                            Thông báo
+                        </a>
+                        <div class="header__notify">
+                            <header class="header__notify-header">
+                                <h3>Thông Báo Mới Nhận</h3>
+                            </header>
+                            <ul class="header__notify-list">
+                                <li class="header__notify--item header__notify--item-viewed">
+                                    <a href="" class="header__notify--link">
+                                        <img src="./assets/img/girl.jpg" alt="" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Hàng chính hãng tuyệt cú mèo. Có còn hàng khác không anh chị ơi</span>
+                                            <span class="header__notify-title">Mô tả của sản phẩm. Hàng việt nam chất lượng cao không độc hại</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="header__notify--item header__notify--item-viewed">
+                                    <a href="" class="header__notify--link">
+                                        <img src="./assets/img/girl.jpg" alt="" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Hàng chính hãng tuyệt cú mèo. Có còn hàng khác không anh chị ơi</span>
+                                            <span class="header__notify-title">Mô tả của sản phẩm. Hàng việt nam chất lượng cao không độc hại</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="header__notify--item">
+                                    <a href="" class="header__notify--link">
+                                        <img src="./assets/img/girl.jpg" alt="" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Hàng chính hãng tuyệt cú mèo. Có còn hàng khác không anh chị ơi</span>
+                                            <span class="header__notify-title">Mô tả của sản phẩm. Hàng việt nam chất lượng cao không độc hại</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="header__notify--item">
+                                    <a href="" class="header__notify--link">
+                                        <img src="./assets/img/girl.jpg" alt="" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Hàng chính hãng tuyệt cú mèo. Có còn hàng khác không anh chị ơi</span>
+                                            <span class="header__notify-title">Mô tả của sản phẩm. Hàng việt nam chất lượng cao không độc hại</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <footer class="header__notify-footer">
+                                <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                            </footer>
+                        </div>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="" class="navbar__icon-link">
+                            <i class="navbar__item-icon far fa-question-circle"></i>
+                            Trợ giúp
+                        </a>
+                    </li>
+                    <!-- Usu li when not loggin -->
+                    <!-- <li id="click__register" class="header__navbar-item header__navbar-item--strong show__register">Đăng ký</li>
+                    <li id="click__login" class="header__navbar-item header__navbar-item--strong">Đăng nhập</li> -->
+                    <li class="header__navbar-item header__navbar--user">
+                        <img src="./assets/img/girl.jpg" alt="" class="img__navbar--user">
+                        <span class="span_navbar--user">Đăng Khoa</span>
+                        <ul class="navbar__user-list">
+                            <li class="navbar__user-list-item">
+                                <a href="">Tài khoản của tôi</a>
+                            </li>
+                            <li class="navbar__user-list-item">
+                                <a href="">Địa chỉ của tôi</a>
+                            </li>
+                            <li class="navbar__user-list-item">
+                                <a href="">Đơn mua</a>
+                            </li>
+                            <li class="navbar__user-list-item navbar__user-list-item--separate">
+                                <a href="">Đăng xuất</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header__search-payment-wrap">
+            <div class="header__search-payment">
+                <div class="header__logo-payment">
+                    <a href="/" class="backhome__with-logo backhome__with-logo-payment">
+                        <span class="logo-icon-header">
+                            <i class="fas fa-laptop logo-icon-header--payment"></i>
+                        </span>
+                        <span class="backhome__with-logo-name logo-name--payment">Shop Laptop</span>
+                    </a>
+                    <span class="nav__payment-item-title">Thanh Toán</span>
+                </div>
+                <div class="header__search header__search-payment-input">
+                    <div class="header__search-input-wrap header__search-input-wrap-payment">
+                        <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm trong Shop">
+                        <!-- Search history -->
+                        <div class="header__search-histoy">
+                            <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                            <ul class="header__search-history-list">
+                                <li class="header__search-history-item">
+                                    <a href="">Phụ kiện Dell</a>
+                                </li>
+                                <li class="header__search-history-item">
+                                    <a href="">Asus</a>
+                                </li>
+                                <li class="header__search-history-item">
+                                    <a href="">Laptop HP</a>
+                                </li>
+                                <li class="header__search-history-item">
+                                    <a href="">Ổ cứng di động</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="header__search-btn">
+                        <i class="header__search-btn-icon fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Phần Content -->
+    <div class="payment__content">
+        <div class="payment__content-wrap">
+            <div class="payment__method-address">
+                <div class="payment__address-wrap">
+                    <div class="payment__address-titel-wrap">
+                        <span class="receive-at-home">Nhận hàng tại nhà</span>
+                        <span class="receive-at-shop">Nhận hàng tại Shop</span>
+                    </div>
+                    <div class="receive__info-wrap">
+                        <span class="receive__info-title">Thông tin nhận hàng</span>
+                        <div class="receive__address-add-wrap">
+                            <div class="receive__address-active-current">
+                                <div class="receive__name-wrap">
+                                    <div class="receive__name-wrap-wrap">
+                                        <span class="receive__name">Mai Đăng Khoa</span>
+                                        <span class="receive__edit-name-icon">
+                                            <i class="far fa-edit"></i>
+                                        </span>
+                                    </div>
+                                    <span class="icon__active-when-click">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                </div>
+                                <span class="receive__phone">0987739123</span>
+                                <div class="receive__address-detail">
+                                    <!-- Phần địa chỉ -->
+                                    <span class="address__apartment-num">Số nhà 152, Đường Hai Bà Chưng</span>,
+                                    <span class="address__commune">Xã Hòa Lộc</span>,
+                                    <span class="address__district">Huyện Bình Thái</span>,
+                                    <span class="address__city">Tỉnh Bắc Ninh</span>
+                                </div>
+                            </div>
+                            <div class="receive__address-addnew">
+                                <span class="icon__active-when-click">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <div class="addnew__add-icon">+</div>
+                                <span class="addnew__add-title">Thêm địa chỉ</span>
+                            </div>
+                        </div>
+                        <span class="delivery__method-title">Phương thức giao hàng</span>
+                        <div class="delivery__method-wrap">
+                            <div class="delivery__method">
+                                <span class="delivery__method-icon">
+                                    <i class="far fa-dot-circle"></i>
+                                </span>
+                                Giao hàng tiêu chuẩn
+                            </div>
+                            <span class="delivery__title-free">Miễn phí</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Phần ghi chú -->
+                <div class="note__for-orders">
+                    <h2 class="note__for-orders-title">Ghi chú cho đơn hàng</h2>
+                    <div class="note__for-orders-input-wrap">
+                        <input type="text" class="note__for-orders-input" placeholder="Nhập thông tin ghi chú cho đơn hàng">
+                    </div>
+                </div>
+                <!-- Phần phương thức thanh toán -->
+                <div class="payment__method-wrap">
+                    <h2 class="title__payment-method">Phương thức thanh toán</h2>
+                    <h4 class="title-info__payment-method">Thông tin thanh toán của bạn sẽ luôn được bảo mật</h4>
+                    <div class="wrap__payment-method">
+                        <div class="payment__method-banking">
+                            <div class="payment__method-banking-title">
+                                Thanh toán qua Internet Banking
+                                <span class="icon__click-method">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                            </div>
+                            <span class="payment__method-momo-note">Thanh toán qua Internet Banking, Visa, Master</span>
+                        </div>
+                        <div class="payment__method-momo">
+                            <div class="payment__method-momo-title">
+                                Thanh toán qua MOMO
+                                <span class="icon__click-method">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                            </div>
+                            <span class="payment__method-momo-note">Thanh toán bằng Ví MOMO</span>
+                        </div>
+                        <div class="payment__method-at-home">
+                            <div class="payment__method-at-home-title">
+                                Thanh toán khi nhận hàng
+                                <span class="icon__click-method">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                            </div>
+                            <span class="payment__method-at-home-note">Thanh toán bằng tiền mặt khi nhận hàng tại nhà</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Danh sách sản phẩm -->
+            <div class="payment__list-item">
+                <div class="payment__list-item-inf">
+                    <div class="inf__orders-wrap">
+                        Thông tin đơn hàng
+                        <a href="" class="inf__orders-edit">Chỉnh sửa</a>
+                    </div>
+                    <ul class="list__orders">
+                        <li class="private__orders">
+                            <span class="img__private-orders">
+                                <img src="https://lh3.googleusercontent.com/l3ISLFn1M4iwawX4PsB3VSbDXYoMEw5KqNh7v_2WxN-rIyEcLMs3QL567GTtSglEpS-tVT8JXq8776S1xfSw45AGdE_CwpDr=w500-rw" alt="">
+                            </span>
+                            <div class="detail__private-orders">
+                                <span class="title__private-orders">Laptop Apple MacBook Air 13" 2019 MVFL2SA/A (Core i5/8GB/256GB SSD/UHD 617/macOS/1.3 kg)</span>
+                                <div class="quantity__private-orders-wrap">
+                                    Số lượng
+                                    <span class="quantity__private-orders">1</span>                   
+                                </div>
+                                <div class="price__private-orders-wrap">
+                                    <div class="price__private-orders-new">24.990.000 ₫</div>
+                                    <div class="price__private-orders-old">27.490.000 ₫</div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="private__orders">
+                            <span class="img__private-orders">
+                                <img src="https://lh3.googleusercontent.com/7XuztPXbTsXtZY9K-bi6wSN-FiMqbhqfZFf2l7DXoJD65fo_1PT2dgEy1zAss1KVo-FPglY-WKP-8rDsQE9K85FFqGW3Ht4=w500-rw" alt="">
+                            </span>
+                            <div class="detail__private-orders">
+                                <span class="title__private-orders">Laptop ACER Nitro 5 AN515-45-R3SM (NH.QBMSV.005) ( 15.6" Full HD/ 144Hz/AMD Ryzen 5 5600H/8GB/512GB SSD/NVIDIA GeForce GTX 1650/Windows 10 Home 64-bit/2.2kg)</span>
+                                <div class="quantity__private-orders-wrap">
+                                    Số lượng
+                                    <span class="quantity__private-orders">1</span>                   
+                                </div>
+                                <div class="price__private-orders-wrap">
+                                    <div class="price__private-orders-new">23.490.000 ₫</div>
+                                    <div class="price__private-orders-old">27.490.000 ₫</div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="private__orders">
+                            <span class="img__private-orders">
+                                <img src="https://lh3.googleusercontent.com/7XuztPXbTsXtZY9K-bi6wSN-FiMqbhqfZFf2l7DXoJD65fo_1PT2dgEy1zAss1KVo-FPglY-WKP-8rDsQE9K85FFqGW3Ht4=w500-rw" alt="">
+                            </span>
+                            <div class="detail__private-orders">
+                                <span class="title__private-orders">Laptop ASUS ROG Strix Scar 15 G533QR-HQ098T ( 15.6" Quad HD (2K)/ 165Hz/AMD Ryzen 9 5900HX/16GB/1TB SSD/NVIDIA GeForce RTX 3070/Windows 10 Home 64-bit/2.3kg)</span>
+                                <div class="quantity__private-orders-wrap">
+                                    Số lượng
+                                    <span class="quantity__private-orders">1</span>                   
+                                </div>
+                                <div class="price__private-orders-wrap">
+                                    <div class="price__private-orders-new">23.490.000 ₫</div>
+                                    <div class="price__private-orders-old">27.490.000 ₫</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="support__service-wrap">
+                    <div class="support__service">
+                        <div class="support__service-click">
+                            <div class="support__service--icon">
+                                <span class="support__service-click-icon">
+                                    <i class="far fa-square"></i>
+                                </span>
+                                <span class="support__service-click-icon support__service-click-icon--active">
+                                    <i class="fas fa-check-square"></i>
+                                </span>
+                            </div>
+                            Hỗ trợ kỹ thuật tận nơi
+                        </div>
+                        <span class="support__service-free">Miễn phí</span>
+                    </div>
+                    <span class="support__service-note">
+                        Hỗ trợ kỹ thuật miễn phí cho đơn hàng trên 5.000.000đ hoặc khách hàng doanh nghiệp.
+                    </span>
+                </div>
+                <div class="sum__payment-wrap">
+                    <div class="sum__price-wrap">
+                        Tạm tính
+                        <span class="sum__price">111.111.111 ₫</span>
+                    </div>
+                    <div class="ship__price-wrap">
+                        Phí vận chuyển
+                        <span class="ship__price">0 ₫</span>
+                    </div>
+                    <div class="real__price-wrap">
+                        Thành tiền
+                        <span class="real__price">111.111.111 ₫</span>
+                    </div>
+                    <div class="note__vat">(Đã bao gồm VAT)</div>
+                    <a href="" class="btn btn__primary btn__payment">Đặt hàng ngay</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+
+    <!-- Modal payment -->
+    <div id="modal__payment">
+        <div id="modal__overlay-payment"></div>
+        <div id="modal__overlay-payment-bold"></div>
+        <div class="modal__body-payment">
+            <div class="show__input-address">
+                <h2 class="show__address-title">Thông tin người nhận hàng</h2>
+                <span class="input__info-name-title">Họ và tên</span>
+                <input type="text" class="input__info-name" placeholder="Nhập tên của bạn">
+                <div class="wrap__phone-and-email">
+                    <div class="wrap__phone-inf">
+                        <div class="input__info-phone-title">Số điện thoại</div>
+                        <input type="text" class="input__info-phone" placeholder="Nhập số điện thoại">
+                    </div>
+                    <div class="wrap__email-inf">
+                        <div class="input__info-email-title">Email</div>
+                        <input type="text" class="input__info-email" placeholder="Nhập email của bạn">
+                    </div>
+                </div>
+                <h2 class="show__address-title">Địa chỉ nhận hàng</h2>
+                <div class="wrap__address-detail">
+                    <div class="wrap__city-inf">
+                        <div class="choose__info-city-title">Tỉnh/Thành Phố</div>
+                        <div id="choose__info-city">
+                            Chọn tỉnh/thành phố
+                            <span class="choose__info-city-icon">
+                                <i class="gg-chevron-down"></i>
+                            </span>
+                            <span class="choose__info-city-icon chevron__icon-up">
+                                <i class="gg-chevron-up"></i>
+                            </span>
+                        </div>
+                        <div id="show__address--city">
+                            <input type="text" class="show__address-input-city" placeholder="Hà Nội">
+                            <div class="show__address-list-wrap">
+                                <ul class="show__address-city-list">
+                                    <li class="show__address-city-item">Hà Nội</li>
+                                    <li class="show__address-city-item">Hải Phòng</li>
+                                    <li class="show__address-city-item">Lạng Sơn</li>
+                                    <li class="show__address-city-item">Sơn La</li>
+                                    <li class="show__address-city-item">Lai Châu</li>
+                                    <li class="show__address-city-item">Điện Biên</li>
+                                    <li class="show__address-city-item">Đăk Lăk</li>
+                                    <li class="show__address-city-item">Đồng Tháp</li>
+                                    <li class="show__address-city-item">Cần Thơ</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap__district-inf">
+                        <div class="choose__info-district-title">Quận/Huyện</div>
+                        <div class="choose__info-district">
+                            Chọn quận/huyện
+                            <span class="choose__info-district-icon">
+                                <i class="gg-chevron-down"></i>
+                            </span>
+                            <span class="choose__info-district-icon chevron__icon-up">
+                                <i class="gg-chevron-up"></i>
+                            </span>
+                        </div>
+                        <div id="show__address--district">
+                            <input type="text" class="show__address-input-district" placeholder="Hoàn Kiếm">
+                            <div class="show__address-list-wrap">
+                                <ul class="show__address-district-list">
+                                    <li class="show__address-district-item">Hoàn Kiếm</li>
+                                    <li class="show__address-district-item">Đống Đa</li>
+                                    <li class="show__address-district-item">Ba Đình</li>
+                                    <li class="show__address-district-item">Hai Bà Trưng</li>
+                                    <li class="show__address-district-item">Hoàng Mai</li>
+                                    <li class="show__address-district-item">Thanh Xuân</li>
+                                    <li class="show__address-district-item">Long Biên</li>
+                                    <li class="show__address-district-item">Nam Từ Liêm</li>
+                                    <li class="show__address-district-item">Bắc Từ Liêm</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap__address-detail">
+                    <div class="wrap__commune-inf">
+                        <div class="choose__info-commune-title">Phường/Xã</div>
+                        <div class="choose__info-commune">
+                            Chọn phường/xã
+                            <span class="choose__info-commune-icon">
+                                <i class="gg-chevron-down"></i>
+                            </span>
+                            <span class="choose__info-commune-icon chevron__icon-up">
+                                <i class="gg-chevron-up"></i>
+                            </span>
+                        </div>
+                        <div id="show__address--commune">
+                            <div class="show__address-list-wrap">
+                                <ul class="show__address-commune-list">
+                                    <li class="show__address-commune-item">Hàng Bạc</li>
+                                    <li class="show__address-commune-item">Hàng Bồ</li>
+                                    <li class="show__address-commune-item">Hàng Bông</li>
+                                    <li class="show__address-commune-item">Hàng Buồm</li>
+                                    <li class="show__address-commune-item">Hàng Đào</li>
+                                    <li class="show__address-commune-item">Hàng Gai</li>
+                                    <li class="show__address-commune-item">Hàng Mã</li>
+                                    <li class="show__address-commune-item">Hàng Trống</li>
+                                    <li class="show__address-commune-item">Tràng Tiền</li>
+                                </ul>
+                            </div>
+                            <input type="text" class="show__address-input-commune" placeholder="Hoàn Kiếm">
+                        </div>
+                    </div>
+                    <div class="wrap__exact-inf">
+                        <div class="choose__info-exact-title">Địa chỉ cụ thể</div>
+                        <input type="text" class="input__info-exact" placeholder="Số nhà, ngõ, tên đường,...">
+                    </div>
+                </div>
+                <div class="set__default-wrap">
+                    <div class="set__default--icon">
+                        <span class="set__default-click-icon">
+                            <i class="far fa-square"></i>
+                        </span>
+                        <span class="set__default-click-icon set__default-click-icon--active">
+                            <i class="fas fa-check-square"></i>
+                        </span>
+                    </div>
+                    Đặt làm mặc định
+                </div>
+                <div class="save__address-wrap">
+                    <a href="" class="btn btn__normal btn__cancel-address">Hủy bỏ</a>
+                    <a href="" class="btn btn__primary btn__save-address">Lưu địa chỉ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/payment.js"></script>
+</body>
+</html>

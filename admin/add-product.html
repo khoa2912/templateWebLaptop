@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thêm Sản Phẩm</title>
+
+    <link rel="stylesheet" href="/admin/css/product.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="jquery-ui-datepicker/jquery-ui.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/tooplate.css">
+</head>
+
+<body class="bg02">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-xl navbar-light bg-light">
+                    <a class="navbar-brand" href="index.html">
+                        <i class="fas fa-3x fa-tachometer-alt tm-site-icon"></i>
+                        <h1 class="tm-site-title mb-0">Trang chủ</h1>
+                    </a>
+                    <button class="navbar-toggler ml-auto mr-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Trang chủ
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item active nav-item--active">
+                                <a class="nav-link" href="products.html">Sản phẩm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="category.html">Phân loại</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="orders.html">Kiểm duyệt đơn hàng</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="users.html">Quản lý User</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link d-flex" href="login.html">
+                                    <i class="far fa-user mr-2 tm-logout-icon"></i>
+                                    <span>Đăng xuất</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+         <!-- Content -->
+        <div class="product__app-wrap">
+            <div class="product__app">
+                <div class="nav__product nav__product-add">
+                    <div class="add__product-title">Thêm Sản Phẩm</div>
+                    <div class="product__info-wrap">
+                        <div class="product__info-wrap-7">
+                            <div class="product__info-name-wrap">
+                                <div class="product__info-name-title">Tên sản phẩm</div>
+                                <div class="product__info-name-input">
+                                    <input type="text" placeholder="">
+                                </div>
+                            </div>
+                            <div class="product__info-trademark-wrap">
+                                <div class="product__info-trademark-title">Thương hiệu</div>
+                                <div class="product__info-trademark-input">
+                                    <input type="text" placeholder="">
+                                </div>
+                            </div>
+                            <div class="product__info-type-wrap">
+                                <div class="product__info-type-title">Phân loại</div>
+                                <div class="product__info-type-input">
+                                    <input type="text" placeholder="">
+                                </div>
+                            </div>
+                            <div class="product__info-description-wrap">
+                                <div class="product__info-description-title">Mô tả</div>
+                                <div class="product__info-description-input">
+                                    <input type="richtext" placeholder="">
+                                </div>
+                            </div>
+                            <div class="product__info-quantity-wrap">
+                                <div class="product__info-quantity-title">Số lượng</div>
+                                <div class="product__info-quantity-input">
+                                    <input type="text" placeholder="0">
+                                </div>
+                            </div>
+                            <div class="product__info-price-wrap">
+                                <div class="product__info-price-title">Giá</div>
+                                <div class="product__info-price-input">
+                                    <input type="text" placeholder="0 ₫">
+                                </div>
+                            </div>
+                            <div class="product__info-date-wrap">
+                                <div class="product__info-date-title">Ngày cập nhập</div>
+                                <div class="product__info-date-input">
+                                    <input type="text" placeholder="dd/mm/yyyy">
+                                </div>
+                            </div>
+                            <button class="btn__add-new-product">Thêm</button>
+                        </div>
+                        <div class="product__info-wrap-3">
+                            <div class="product__info-wrap-3-wrap">
+                                <div class="img__product-wrap">
+                                    <i class="far fa-image"></i>
+                                    <img src="" alt="" class="img__product">
+                                </div>
+                                <button class="btn__change-img">Tải ảnh</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

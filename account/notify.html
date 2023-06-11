@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/account.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap&subset=vietnamese" rel="stylesheet"> 
+    
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+        $(function(){
+          $("#header").load("/header.html");
+          $("#footer").load("/footer.html"); 
+        });
+    </script> 
+</head>
+<body>
+    <div id="header"></div>
+    <!-- Content -->
+    <div class="account__content-wrap">
+        <div class="account__content">
+            <!-- Thông tin bên trái ứng với column 2 -->
+            <div class="account__content-2">
+                <!-- Tên và ảnh -->
+                <div class="user__info">
+                    <span class="user__info-img">
+                        <img src="https://cdn-codel.nitrocdn.com/tcXEInFIuLZpqJskgGRZMcSPgOtEVlpt/assets/static/optimized/rev-520b63a/wp-content/uploads/2021/10/anh-gai-xinh-toc-dai-deo-kinh-2k4-1.jpg" alt="">
+                    </span>
+                    <div class="user__info-name">
+                        Mai Dang Khoa
+                        <a class="user__info-edit-wrap">
+                            <span class="user__info-edit-icon">
+                                <i class="fas fa-edit"></i>
+                            </span>
+                            Sửa Hồ Sơ
+                        </a>
+                    </div>
+                </div>
+                <div class="my__account">
+                    <span class="my__account-icon">
+                        <i class="far fa-user"></i>
+                    </span>
+                    Tài Khoản Của Tôi
+                </div>
+                <div class="wrap__account-info">
+                    <a href="/account/account.html" class="account-info--title">Hồ Sơ</a>
+                    <a href="/account/address.html" class="account-address-title">Địa Chỉ</a>
+                    <a href="/account/change_pass.html" class="account-edit-pass">Đổi Mật Khẩu</a>
+                </div>
+                <a href="/account/orders.html" class="wrap__purchase-orders">
+                    <span class="purchase-orders-icon">
+                        <i class="far fa-file-alt"></i>
+                    </span>
+                    Quản Lý Đơn Hàng
+                </a>
+                <a href="/account/notify.html" class="wrap__notify account__title-blue-active">
+                    <span class="notify-icon">
+                        <i class="far fa-bell"></i>
+                    </span>
+                    Thông Báo
+                </a>
+            </div>
+            <div class="account__content-10-notify">
+                <div class="has__notify-account-wrap">
+                    <div class="list__notify-title">Danh Sách Thông Báo</div>
+                    <ul class="notify__account-list">
+                        <li class="notify__account-item">
+                            <div class="notify__account-wrap">
+                                <span class="notify__account-product-img">
+                                    <img src="https://lh3.googleusercontent.com/7XuztPXbTsXtZY9K-bi6wSN-FiMqbhqfZFf2l7DXoJD65fo_1PT2dgEy1zAss1KVo-FPglY-WKP-8rDsQE9K85FFqGW3Ht4=w500-rw" alt="">
+                                </span>
+                                <div class="notify__for-orders">
+                                    <span class="notify__for-orders-title">Giao Kiện Hàng Thành Công</span>
+                                    <div class="notify__for-orders-info-wrap">
+                                        Kiện hàng của đơn hàng
+                                        <span class="notify__for-orders-info">21204012003saf021</span>
+                                        đã giao thành công đến bạn
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="notify__account-wrap-btn">
+                                <a href="" class="link__notify-detail">Xem Chi Tiết</a>
+                                <a href="" class="link__notify-remove">Xóa</a>
+                            </div>
+                        </li>
+
+                        <li class="notify__account-item">
+                            <div class="notify__account-wrap">
+                                <span class="notify__account-product-img">
+                                    <img src="https://lh3.googleusercontent.com/7XuztPXbTsXtZY9K-bi6wSN-FiMqbhqfZFf2l7DXoJD65fo_1PT2dgEy1zAss1KVo-FPglY-WKP-8rDsQE9K85FFqGW3Ht4=w500-rw" alt="">
+                                </span>
+                                <div class="notify__for-orders">
+                                    <span class="notify__for-orders-title">Đơn Hàng Đang Được Vận Chuyển</span>
+                                    <div class="notify__for-orders-info-wrap">
+                                        Kiện hàng của đơn hàng
+                                        <span class="notify__for-orders-info">21204012003saf021</span>
+                                        Đang được vận chuyển đến bạn
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="notify__account-wrap-btn">
+                                <a href="" class="link__notify-detail">Xem Chi Tiết</a>
+                                <a href="" class="link__notify-remove">Xóa</a>
+                            </div>
+                        </li>
+
+                        <li class="notify__account-item">
+                            <div class="notify__account-wrap">
+                                <span class="notify__account-product-img">
+                                    <img src="https://lh3.googleusercontent.com/7XuztPXbTsXtZY9K-bi6wSN-FiMqbhqfZFf2l7DXoJD65fo_1PT2dgEy1zAss1KVo-FPglY-WKP-8rDsQE9K85FFqGW3Ht4=w500-rw" alt="">
+                                </span>
+                                <div class="notify__for-orders">
+                                    <span class="notify__for-orders-title">Đã Tiếp Nhận Đơn Hàng</span>
+                                    <div class="notify__for-orders-info-wrap">
+                                        Đơn hàng
+                                        <span class="notify__for-orders-info">21204012003saf021</span>
+                                        Đã được duyệt
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="notify__account-wrap-btn">
+                                <a href="" class="link__notify-detail">Xem Chi Tiết</a>
+                                <a href="" class="link__notify-remove">Xóa</a>
+                            </div>
+                        </li>
+
+                        <li class="notify__account-item">
+                            <div class="notify__account-wrap">
+                                <span class="notify__account-product-img">
+                                    <img src="https://lh3.googleusercontent.com/7XuztPXbTsXtZY9K-bi6wSN-FiMqbhqfZFf2l7DXoJD65fo_1PT2dgEy1zAss1KVo-FPglY-WKP-8rDsQE9K85FFqGW3Ht4=w500-rw" alt="">
+                                </span>
+                                <div class="notify__for-orders">
+                                    <span class="notify__for-orders-title">Đặt Hàng Thành Công</span>
+                                    <div class="notify__for-orders-info-wrap">
+                                        Đơn hàng
+                                        <span class="notify__for-orders-info">21204012003saf021</span>
+                                        Đang chờ duyệt
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="notify__account-wrap-btn">
+                                <a href="" class="link__notify-detail">Xem Chi Tiết</a>
+                                <a href="" class="link__notify-remove">Xóa</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="no__notify-account">
+                    <span class="no__notify-account-icon">
+                        <img src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg//assets/fa4e2b534c2928596a6deded9c730a21.png" alt="">
+                    </span>
+                    <span class="no__notify-account-title">Chưa có thông báo mới</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>

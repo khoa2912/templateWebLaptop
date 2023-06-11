@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trang chủ</title>
+    <!--
+
+    Template 2108 Dashboard
+
+	http://www.tooplate.com/view/2108-dashboard
+
+    -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+    <!-- https://fonts.google.com/specimen/Open+Sans -->
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <!-- https://fontawesome.com/ -->
+    <link rel="stylesheet" href="css/fullcalendar.min.css">
+    <!-- https://fullcalendar.io/ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- https://getbootstrap.com/ -->
+    <link rel="stylesheet" href="css/tooplate.css">
+</head>
+
+<body id="reportsPage">
+    <div class="" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-xl navbar-light bg-light">
+                        <a class="navbar-brand" href="#">
+                            <i class="fas fa-3x fa-tachometer-alt tm-site-icon"></i>
+                            <h1 class="tm-site-title mb-0">Trang chủ</h1>
+                        </a>
+                        <button class="navbar-toggler ml-auto mr-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Trang chủ
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <!-- <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        Báo cáo
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Báo cáo theo ngày</a>
+                                        <a class="dropdown-item" href="#">Báo cáo theo tháng</a>
+                                        <a class="dropdown-item" href="#">Báo cáo theo năm</a>
+                                    </div>
+                                </li> -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="products.html">Sản phẩm</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="category.html">Phân loại</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="orders.html">Kiểm duyệt đơn hàng</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="users.html">Quản lý User</a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex" href="login.html">
+                                        <i class="far fa-user mr-2 tm-logout-icon"></i>
+                                        <span>Đăng xuất</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- row -->
+            <div class="row tm-content-row tm-mt-big ">
+                <div class="tm-col tm-col-big ">
+                    <div class="bg-white tm-block h-100 report__border-left">
+                        <h2 class="tm-block-title">Lượt truy cập</h2>
+                        <canvas id="lineChart"></canvas>
+                    </div>
+                </div>
+                <div class="tm-col tm-col-big">
+                    <div class="bg-white tm-block h-100">
+                        <h2 class="tm-block-title">Hiệu suất</h2>
+                        <canvas id="barChart"></canvas>
+                    </div>
+                </div>
+                <div class="tm-col tm-col-small">
+                    <div class="bg-white tm-block h-100 report__border-right">
+                        <canvas id="pieChart" class="chartjs-render-monitor"></canvas>
+                    </div>
+                </div>
+
+                <div class="tm-col tm-col-big">
+                    <div class="bg-white tm-block h-100 report__border-leftb">
+                        <div class="row">
+                            <div class="col-8">
+                                <h2 class="tm-block-title d-inline-block">SẢN PHẨM BÁN CHẠY</h2>
+
+                            </div>
+                            <div class="col-4 text-right">
+                                <a href="products.html" class="tm-link-black">XEM TẤT CẢ</a>
+                            </div>
+                        </div>
+                        <ol class="tm-list-group tm-list-group-alternate-color tm-list-group-pad-big">
+                            <li class="tm-list-group-item">
+                                Laptop Dell M4800 64bit 8gb SSD 1T
+                            </li>
+                            <li class="tm-list-group-item">
+                                Laptop Dell M4800 64bit 8gb SSD 1T
+                            </li>
+                            <li class="tm-list-group-item">
+                                Laptop Dell M4800 64bit 8gb SSD 1T
+                            </li>
+                            <li class="tm-list-group-item">
+                                Laptop Dell M4800 64bit 8gb SSD 1T
+                            </li>
+                            <li class="tm-list-group-item">
+                                Laptop Dell M4800 64bit 8gb SSD 1T
+                            </li>
+                            <li class="tm-list-group-item">
+                                Laptop Dell M4800 64bit 8gb SSD 1T
+                            </li>
+                            <li class="tm-list-group-item">
+                                Laptop Dell M4800 64bit 8gb SSD 1T
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="tm-col tm-col-big">
+                    <div class="bg-white tm-block h-100">
+                        <h2 class="tm-block-title">LỊCH</h2>
+                        <div id="calendar"></div>
+                    </div>
+                </div>
+                <div class="tm-col tm-col-small">
+                    <div class="bg-white tm-block h-100 report__border-rightb">
+                        <h2 class="tm-block-title">NHIỆM VỤ</h2>
+                        <ol class="tm-list-group">
+                            <li class="tm-list-group-item">Đọc báo cáo</li>
+                            <li class="tm-list-group-item">Kiểm tra mail</li>
+                            <li class="tm-list-group-item">Xem phản hồi</li>
+                            <li class="tm-list-group-item">Lên kế hoạch tuần kế tiếp</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <!-- <footer class="row tm-mt-small">
+                <div class="col-12 font-weight-light">
+                    <p class="d-inline-block tm-bg-black text-white py-2 px-4">
+                        Copyright &copy; 2018 Admin Dashboard . Created by
+                        <a rel="nofollow" href="https://www.tooplate.com" class="text-white tm-footer-link">Tooplate</a>
+                    </p>
+                </div>
+            </footer> -->
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- https://jquery.com/download/ -->
+    <script src="js/moment.min.js"></script>
+    <!-- https://momentjs.com/ -->
+    <script src="js/utils.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <!-- http://www.chartjs.org/docs/latest/ -->
+    <script src="js/fullcalendar.min.js"></script>
+    <!-- https://fullcalendar.io/ -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- https://getbootstrap.com/ -->
+    <script src="js/tooplate-scripts.js"></script>
+    <script>
+        let ctxLine,
+            ctxBar,
+            ctxPie,
+            optionsLine,
+            optionsBar,
+            optionsPie,
+            configLine,
+            configBar,
+            configPie,
+            lineChart;
+        barChart, pieChart;
+        // DOM is ready
+        $(function () {
+            updateChartOptions();
+            drawLineChart(); // Line Chart
+            drawBarChart(); // Bar Chart
+            drawPieChart(); // Pie Chart
+            drawCalendar(); // Calendar
+
+            $(window).resize(function () {
+                updateChartOptions();
+                updateLineChart();
+                updateBarChart();
+                reloadPage();
+            });
+        })
+    </script>
+</body>
+</html>

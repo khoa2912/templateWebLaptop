@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/account.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap&subset=vietnamese" rel="stylesheet"> 
+    
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+        $(function(){
+          $("#header").load("/header.html");
+          $("#footer").load("/footer.html"); 
+        });
+    </script> 
+</head>
+<body>
+    <div id="header"></div>
+    <!-- Content -->
+    <div class="account__content-wrap">
+        <div class="account__content">
+            <!-- Thông tin bên trái ứng với column 2 -->
+            <div class="account__content-2">
+                <!-- Tên và ảnh -->
+                <div class="user__info">
+                    <span class="user__info-img">
+                        <img src="https://cdn-codel.nitrocdn.com/tcXEInFIuLZpqJskgGRZMcSPgOtEVlpt/assets/static/optimized/rev-520b63a/wp-content/uploads/2021/10/anh-gai-xinh-toc-dai-deo-kinh-2k4-1.jpg" alt="">
+                    </span>
+                    <div class="user__info-name">
+                        Mai Dang Khoa
+                        <a class="user__info-edit-wrap">
+                            <span class="user__info-edit-icon">
+                                <i class="fas fa-edit"></i>
+                            </span>
+                            Sửa Hồ Sơ
+                        </a>
+                    </div>
+                </div>
+                <div class="my__account">
+                    <span class="my__account-icon">
+                        <i class="far fa-user"></i>
+                    </span>
+                    Tài Khoản Của Tôi
+                </div>
+                <div class="wrap__account-info">
+                    <a href="/account/account.html" class="account-info--title">Hồ Sơ</a>
+                    <a href="/account/address.html" class="account-address-title account__title-blue-active">Địa Chỉ</a>
+                    <a href="/account/change_pass.html" class="account-edit-pass">Đổi Mật Khẩu</a>
+                </div>
+                <a href="/account/orders.html" class="wrap__purchase-orders">
+                    <span class="purchase-orders-icon">
+                        <i class="far fa-file-alt"></i>
+                    </span>
+                    Quản Lý Đơn Hàng
+                </a>
+                <a href="/account/notify.html" class="wrap__notify">
+                    <span class="notify-icon">
+                        <i class="far fa-bell"></i>
+                    </span>
+                    Thông Báo
+                </a>
+            </div>
+            <div class="account__content-10-address">
+                <button class="add__address-wrap">
+                    <span class="add__address-icon">
+                        +
+                    </span>
+                    <span class="add__address-title">Thêm Địa Chỉ</span>
+                </button>
+                <!-- Chưa có địa chỉ -->
+                <div class="no__address-show">
+                    <span class="no__address-icon">
+                        <i class="far fa-clipboard"></i>
+                    </span>
+                    <span class="no__address-title">Chưa có địa chỉ</span>
+                </div>
+                <!-- Có địa chỉ -->
+                <div class="has__address-show">
+                    <ul class="has__address-list">
+                        <li class="has__address-item">
+                            <div class="has__address-nav-wrap">
+                                <div class="has__address-nav-default">
+                                    <span class="name__of-user">Mai Dang Khoa</span>
+                                    <span class="default__address">Mặc định</span>
+                                </div>
+                                <!-- Thêm address-nav--remove--disable để vô hiệu hóa nút xóa -->
+                                <div class="has__address-nav">
+                                    <button class="address-nav--edit">Chỉnh Sửa</button>
+                                    <button class="address-nav--remove address-nav--remove--disable">Xóa</button>
+                                </div>
+                            </div>
+                            <div class="info__address-detail-wrap">
+                                Địa chỉ:
+                                <span class="info__address-detail">Số 21 đường hoa thanh</span>,
+                                <span class="info__address-commune">Phường Mai Dịch</span>,
+                                <span class="info__address-district">Quận Cầu Giấy</span>,
+                                <span class="info__address-city">Thành Phố Hà Nội</span>
+                            </div>
+                            <div class="info__phone-detail-wrap">
+                                Điện thoại:
+                                <span class="info__phone-detail">0859629999</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <!-- Modal address -->
+    <div id="modal__address">
+        <div id="modal__overlay-address"></div>
+        <div id="modal__overlay-address-bold"></div>
+        <div class="modal__body-address">
+            <div class="show__input-address">
+                <h2 class="show__address-title">Thông tin người nhận hàng</h2>
+                <span class="input__info-name-title">Họ và tên</span>
+                <input type="text" class="input__info-name" placeholder="Nhập tên của bạn">
+                <div class="wrap__phone-and-email">
+                    <div class="wrap__phone-inf">
+                        <div class="input__info-phone-title">Số điện thoại</div>
+                        <input type="text" class="input__info-phone" placeholder="Nhập số điện thoại">
+                    </div>
+                    <div class="wrap__email-inf">
+                        <div class="input__info-email-title">Email</div>
+                        <input type="text" class="input__info-email" placeholder="Nhập email của bạn">
+                    </div>
+                </div>
+                <h2 class="show__address-title">Địa chỉ nhận hàng</h2>
+                <div class="wrap__address-detail">
+                    <div class="wrap__city-inf">
+                        <div class="choose__info-city-title">Tỉnh/Thành Phố</div>
+                        <div id="choose__info-city">
+                            Chọn tỉnh/thành phố
+                            <span class="choose__info-city-icon">
+                                <i class="gg-chevron-down"></i>
+                            </span>
+                            <span class="choose__info-city-icon chevron__icon-up">
+                                <i class="gg-chevron-up"></i>
+                            </span>
+                        </div>
+                        <div id="show__address--city">
+                            <input type="text" class="show__address-input-city" placeholder="Hà Nội">
+                            <div class="show__address-list-wrap">
+                                <ul class="show__address-city-list">
+                                    <li class="show__address-city-item">Hà Nội</li>
+                                    <li class="show__address-city-item">Hải Phòng</li>
+                                    <li class="show__address-city-item">Lạng Sơn</li>
+                                    <li class="show__address-city-item">Sơn La</li>
+                                    <li class="show__address-city-item">Lai Châu</li>
+                                    <li class="show__address-city-item">Điện Biên</li>
+                                    <li class="show__address-city-item">Đăk Lăk</li>
+                                    <li class="show__address-city-item">Đồng Tháp</li>
+                                    <li class="show__address-city-item">Cần Thơ</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap__district-inf">
+                        <div class="choose__info-district-title">Quận/Huyện</div>
+                        <div class="choose__info-district">
+                            Chọn quận/huyện
+                            <span class="choose__info-district-icon">
+                                <i class="gg-chevron-down"></i>
+                            </span>
+                            <span class="choose__info-district-icon chevron__icon-up">
+                                <i class="gg-chevron-up"></i>
+                            </span>
+                        </div>
+                        <div id="show__address--district">
+                            <input type="text" class="show__address-input-district" placeholder="Hoàn Kiếm">
+                            <div class="show__address-list-wrap">
+                                <ul class="show__address-district-list">
+                                    <li class="show__address-district-item">Hoàn Kiếm</li>
+                                    <li class="show__address-district-item">Đống Đa</li>
+                                    <li class="show__address-district-item">Ba Đình</li>
+                                    <li class="show__address-district-item">Hai Bà Trưng</li>
+                                    <li class="show__address-district-item">Hoàng Mai</li>
+                                    <li class="show__address-district-item">Thanh Xuân</li>
+                                    <li class="show__address-district-item">Long Biên</li>
+                                    <li class="show__address-district-item">Nam Từ Liêm</li>
+                                    <li class="show__address-district-item">Bắc Từ Liêm</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap__address-detail">
+                    <div class="wrap__commune-inf">
+                        <div class="choose__info-commune-title">Phường/Xã</div>
+                        <div class="choose__info-commune">
+                            Chọn phường/xã
+                            <span class="choose__info-commune-icon">
+                                <i class="gg-chevron-down"></i>
+                            </span>
+                            <span class="choose__info-commune-icon chevron__icon-up">
+                                <i class="gg-chevron-up"></i>
+                            </span>
+                        </div>
+                        <div id="show__address--commune">
+                            <div class="show__address-list-wrap">
+                                <ul class="show__address-commune-list">
+                                    <li class="show__address-commune-item">Hàng Bạc</li>
+                                    <li class="show__address-commune-item">Hàng Bồ</li>
+                                    <li class="show__address-commune-item">Hàng Bông</li>
+                                    <li class="show__address-commune-item">Hàng Buồm</li>
+                                    <li class="show__address-commune-item">Hàng Đào</li>
+                                    <li class="show__address-commune-item">Hàng Gai</li>
+                                    <li class="show__address-commune-item">Hàng Mã</li>
+                                    <li class="show__address-commune-item">Hàng Trống</li>
+                                    <li class="show__address-commune-item">Tràng Tiền</li>
+                                </ul>
+                            </div>
+                            <input type="text" class="show__address-input-commune" placeholder="Hoàn Kiếm">
+                        </div>
+                    </div>
+                    <div class="wrap__exact-inf">
+                        <div class="choose__info-exact-title">Địa chỉ cụ thể</div>
+                        <input type="text" class="input__info-exact" placeholder="Số nhà, ngõ, tên đường,...">
+                    </div>
+                </div>
+                <div class="set__default-wrap">
+                    <div class="set__default--icon">
+                        <span class="set__default-click-icon">
+                            <i class="far fa-square"></i>
+                        </span>
+                        <span class="set__default-click-icon set__default-click-icon--active">
+                            <i class="fas fa-check-square"></i>
+                        </span>
+                    </div>
+                    Đặt làm mặc định
+                </div>
+                <div class="save__address-wrap">
+                    <a href="" class="btn btn__normal btn__cancel-address">Hủy bỏ</a>
+                    <a href="" class="btn btn__primary btn__save-address">Lưu địa chỉ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

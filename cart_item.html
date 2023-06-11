@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./assets/css/cart_item.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap&subset=vietnamese" rel="stylesheet"> 
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+        $(function(){
+          
+          $("#footer").load("footer.html"); 
+        });
+    </script> 
+</head>
+<body>
+    <div class="cart__item-header">
+        <div class="header__navbar-cart-wrap">
+            <div class="header__navbar-cart">
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate">
+                        Vào cửa hàng trên ứng dụng Shop Laptop
+                        <div class="header__qr">
+                            <img src="./assets/img/qr_code.png" alt="QR Code" class="header__qr-img">
+                            <div class="header__qr-apps">
+                                <a href="" class="header__qr-link">
+                                    <img src="./assets/img/google_play.png" alt="Google Play" class="header__app-download">
+                                </a>
+                                <a href="" class="header__qr-link">
+                                    <img src="./assets/img/app_store.png" alt="App Store" class="header__app-download">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__navbar-item">
+                        <span class="header__navbar-title--no-pointer">
+                            Kết nối
+                            <a href="" class="navbar__icon-link">
+                                <i class="navbar__item-icon fab fa-facebook"></i>
+                            </a>
+                            <a href="" class="navbar__icon-link">
+                                <i class="navbar__item-icon fab fa-google-plus"></i> 
+                            </a>
+                        </span>
+                    </li>
+                </ul>
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item header__notify-fadein">
+                        <a href="" class="navbar__icon-link">
+                            <i class="navbar__item-icon far fa-bell"></i>
+                            Thông báo
+                        </a>
+                        <div class="header__notify">
+                            <header class="header__notify-header">
+                                <h3>Thông Báo Mới Nhận</h3>
+                            </header>
+                            <ul class="header__notify-list">
+                                <li class="header__notify--item header__notify--item-viewed">
+                                    <a href="" class="header__notify--link">
+                                        <img src="./assets/img/girl.jpg" alt="" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Hàng chính hãng tuyệt cú mèo. Có còn hàng khác không anh chị ơi</span>
+                                            <span class="header__notify-title">Mô tả của sản phẩm. Hàng việt nam chất lượng cao không độc hại</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="header__notify--item header__notify--item-viewed">
+                                    <a href="" class="header__notify--link">
+                                        <img src="./assets/img/girl.jpg" alt="" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Hàng chính hãng tuyệt cú mèo. Có còn hàng khác không anh chị ơi</span>
+                                            <span class="header__notify-title">Mô tả của sản phẩm. Hàng việt nam chất lượng cao không độc hại</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="header__notify--item">
+                                    <a href="" class="header__notify--link">
+                                        <img src="./assets/img/girl.jpg" alt="" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Hàng chính hãng tuyệt cú mèo. Có còn hàng khác không anh chị ơi</span>
+                                            <span class="header__notify-title">Mô tả của sản phẩm. Hàng việt nam chất lượng cao không độc hại</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="header__notify--item">
+                                    <a href="" class="header__notify--link">
+                                        <img src="./assets/img/girl.jpg" alt="" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Hàng chính hãng tuyệt cú mèo. Có còn hàng khác không anh chị ơi</span>
+                                            <span class="header__notify-title">Mô tả của sản phẩm. Hàng việt nam chất lượng cao không độc hại</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <footer class="header__notify-footer">
+                                <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                            </footer>
+                        </div>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="" class="navbar__icon-link">
+                            <i class="navbar__item-icon far fa-question-circle"></i>
+                            Trợ giúp
+                        </a>
+                    </li>
+                    <!-- Usu li when not loggin -->
+                    <!-- <li id="click__register" class="header__navbar-item header__navbar-item--strong show__register">Đăng ký</li>
+                    <li id="click__login" class="header__navbar-item header__navbar-item--strong">Đăng nhập</li> -->
+                    <li class="header__navbar-item header__navbar--user">
+                        <img src="./assets/img/girl.jpg" alt="" class="img__navbar--user">
+                        <span class="span_navbar--user">Đăng Khoa</span>
+                        <ul class="navbar__user-list">
+                            <li class="navbar__user-list-item">
+                                <a href="">Tài khoản của tôi</a>
+                            </li>
+                            <li class="navbar__user-list-item">
+                                <a href="">Địa chỉ của tôi</a>
+                            </li>
+                            <li class="navbar__user-list-item">
+                                <a href="">Đơn mua</a>
+                            </li>
+                            <li class="navbar__user-list-item navbar__user-list-item--separate">
+                                <a href="">Đăng xuất</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header__search-cart-wrap">
+            <div class="header__search-cart">
+                <div class="header__logo-cart">
+                    <a href="/" class="backhome__with-logo backhome__with-logo-cart">
+                        <span class="logo-icon-header">
+                            <i class="fas fa-laptop logo-icon-header--cart"></i>
+                        </span>
+                        <span class="backhome__with-logo-name logo-name--cart">Shop Laptop</span>
+                    </a>
+                    <span class="nav__cart-item-title">Giỏ Hàng</span>
+                </div>
+                <div class="header__search header__search-cart-input">
+                    <div class="header__search-input-wrap header__search-input-wrap-cart">
+                        <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm trong Shop">
+                        <!-- Search history -->
+                        <div class="header__search-histoy">
+                            <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                            <ul class="header__search-history-list">
+                                <li class="header__search-history-item">
+                                    <a href="">Phụ kiện Dell</a>
+                                </li>
+                                <li class="header__search-history-item">
+                                    <a href="">Asus</a>
+                                </li>
+                                <li class="header__search-history-item">
+                                    <a href="">Laptop HP</a>
+                                </li>
+                                <li class="header__search-history-item">
+                                    <a href="">Ổ cứng di động</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="header__search-btn">
+                        <i class="header__search-btn-icon fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cart__item-content">
+        <div class="cart__item-content-wrap">
+            <!-- Thanh head -->
+            <div class="content__head--tile-wrap">
+                <div class="cart__check-wrap">
+                    <div class="cart__checkbox-box">
+                        <!-- Khi click thì kích hoạt  cart__checkbox-box-when-click--select-->
+                        <span class="cart__checkbox-box-when-click--select">
+                            <i class="fas fa-check-square"></i>
+                        </span>
+                    </div>
+                    <div class="cart__check-title">Sản Phẩm</div>
+                </div>
+                <div class="cart__check-price">Đơn Giá</div>
+                <div class="cart__check-quantity">Số Lượng</div>
+                <div class="cart__check-money">Số Tiền</div>
+                <div class="cart__check-operation">Thao Tác</div>
+            </div>
+            <!-- Danh sách các item -->
+            <div class="content__body-item-wrap">
+                <div class="content__body-product-list">
+                    <div class="content__body-product-item">
+                        <div class="content__body-product-item-title">
+                            <div class="cart__checkbox-box cart__checkbox-box-item item__active">
+                                <!-- Khi click thì kích hoạt  cart__checkbox-box-when-click--item-->
+                                <span class="cart__checkbox-box-when-click--item">
+                                    <i class="fas fa-check-square"></i>
+                                </span>
+                            </div>
+                            <span class="content__body-item-product-img">
+                                <img src="https://lh3.googleusercontent.com/EdLLoLMtdb-eIbE6Egm2FxMfFIhM8fS1bqofnmQyvCzMxw10rl6IcdschPlNn-dQEdKN5WJuTq1Gjetzdg=w500-rw" alt="">
+                            </span>
+                            <div class="content__body-product-item-title-wrap">
+                                <div class="product-item-title--name">
+                                    Laptop Apple MacBook Air 13" 2019 MVFL2SA/A (Core i5/8GB/256GB SSD/UHD 617/macOS/1.3 kg)
+                                </div>
+                                <div class="product-item-title--return">
+                                    <span class="product-item-title--return-icon">
+                                        30
+                                    </span>
+                                    30 Ngày Miễn Phí Trả Hàng
+                                </div>
+                            </div>
+                            <div class="content__body-product-item-title-type">
+                                <div class="product-item-title-type">
+                                    Phân Loại Hàng
+                                    <div class="title-type-icon-down"></div>
+                                    <div class="title-type-icon-up"></div>
+                                </div>
+                                <span class="product-item-title-type-name">Màu Bạc</span>
+                            </div>
+                        </div>
+                        <div class="content__body-product-item-price">24.990.000 ₫</div>
+                        <div class="content__body-product-item-quantity">
+                            <span class="quantity__icon-sub">
+                                <i class="gg-math-minus"></i>
+                            </span>
+                            <input type="text" class="quantity__input" value="1">
+                            <span class="quantity__icon-add">
+                                <i class="gg-math-plus"></i>
+                            </span>
+                        </div>
+                        <div class="content__body-product-item-money">24.990.000 ₫</div>
+                        <div class="content__body-product-item-operation">
+                            <a href="#">
+                                Xóa
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="content__body-product-item">
+                        <div class="content__body-product-item-title">
+                            <div class="cart__checkbox-box cart__checkbox-box-item">
+                                <!-- Khi click thì kích hoạt  cart__checkbox-box-when-click--item-->
+                                <span class="cart__checkbox-box-when-click--item">
+                                    <i class="fas fa-check-square"></i>
+                                </span>
+                            </div>
+                            <span class="content__body-item-product-img">
+                                <img src="https://lh3.googleusercontent.com/FQB8KSD64Zo9b4JocjiFwQGbHDjRnJaldnj8hboyxK8fb2ON8E7kKUAH2-HMzZPcmXl0tJVvHXGgV-ABIFr-=w500-rw" alt="">
+                            </span>
+                            <div class="content__body-product-item-title-wrap">
+                                <div class="product-item-title--name">
+                                    Laptop Acer Aspire 5 A515-53G-5788 (NX.H7RSV.001) (15.6" FHD/i5-8265U/4GB/1TB HDD/Free DOS/2.1 kg)
+                                </div>
+                                <div class="product-item-title--return">
+                                    <span class="product-item-title--return-icon">
+                                        30
+                                    </span>
+                                    30 Ngày Miễn Phí Trả Hàng
+                                </div>
+                            </div>
+                            <div class="content__body-product-item-title-type">
+                                <div class="product-item-title-type">
+                                    Phân Loại Hàng
+                                    <div class="title-type-icon-down"></div>
+                                    <div class="title-type-icon-up"></div>
+                                </div>
+                                <span class="product-item-title-type-name">Màu Xám</span>
+                            </div>
+                        </div>
+                        <div class="content__body-product-item-price">15.490.000 ₫</div>
+                        <div class="content__body-product-item-quantity">
+                            <span class="quantity__icon-sub">
+                                <i class="gg-math-minus"></i>
+                            </span>
+                            <input type="text" class="quantity__input" value="1">
+                            <span class="quantity__icon-add">
+                                <i class="gg-math-plus"></i>
+                            </span>
+                        </div>
+                        <div class="content__body-product-item-money">15.490.000 ₫</div>
+                        <div class="content__body-product-item-operation">
+                            <a href="#">
+                                Xóa
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="content__body-product-item">
+                        <div class="content__body-product-item-title">
+                            <div class="cart__checkbox-box cart__checkbox-box-item">
+                                <!-- Khi click thì kích hoạt  cart__checkbox-box-when-click--item-->
+                                <span class="cart__checkbox-box-when-click--item">
+                                    <i class="fas fa-check-square"></i>
+                                </span>
+                            </div>
+                            <span class="content__body-item-product-img">
+                                <img src="https://lh3.googleusercontent.com/i83Z3Q42scbgif-NitqsMedT56Q3OfKC6DQHieaG7iVLOeh4YxJqXiu96sH4b5U9rYKLjHXdLf7ufHPlqGF69tHNgBJxuQ=w500-rw" alt="">
+                            </span>
+                            <div class="content__body-product-item-title-wrap">
+                                <div class="product-item-title--name">
+                                    Laptop Lenovo IdeaPad 5 Pro 16ACH6 82L50097VN ( 16" WQXGA/ 120Hz/AMD Ryzen 5 5600H/8GB/512GB SSD/NVIDIA GeForce GTX 1650/Windows 11 Home/1.9kg)
+                                </div>
+                                <div class="product-item-title--return">
+                                    <span class="product-item-title--return-icon">
+                                        30
+                                    </span>
+                                    30 Ngày Miễn Phí Trả Hàng
+                                </div>
+                            </div>
+                            <div class="content__body-product-item-title-type">
+                                <div class="product-item-title-type">
+                                    Phân Loại Hàng
+                                    <div class="title-type-icon-down"></div>
+                                    <div class="title-type-icon-up"></div>
+                                </div>
+                                <span class="product-item-title-type-name">Màu Đen</span>
+                            </div>
+                        </div>
+                        <div class="content__body-product-item-price">23.990.000 ₫</div>
+                        <div class="content__body-product-item-quantity">
+                            <span class="quantity__icon-sub">
+                                <i class="gg-math-minus"></i>
+                            </span>
+                            <input type="text" class="quantity__input" value="1">
+                            <span class="quantity__icon-add">
+                                <i class="gg-math-plus"></i>
+                            </span>
+                        </div>
+                        <div class="content__body-product-item-money">23.990.000 ₫</div>
+                        <div class="content__body-product-item-operation">
+                            <a href="#">
+                                Xóa
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="content__body-product-item">
+                        <div class="content__body-product-item-title">
+                            <div class="cart__checkbox-box cart__checkbox-box-item">
+                                 <!-- Khi click thì kích hoạt  cart__checkbox-box-when-click--item-->
+                                <span class="cart__checkbox-box-when-click--item">
+                                    <i class="fas fa-check-square"></i>
+                                </span>
+                            </div>
+                            <span class="content__body-item-product-img">
+                                <img src="https://lh3.googleusercontent.com/oUobPUzGSekGyL_BguyYTG0KyZWrBYEzqAUIxOGC27jMy1aHLZOx-a7_ctsuER1Q5_1QomtUyiCcYD2PHjk=w500-rw" alt="">
+                            </span>
+                            <div class="content__body-product-item-title-wrap">
+                                <div class="product-item-title--name">
+                                    Laptop Acer Nitro 5 AN515-52-51LW (NH.Q3LSV.002) (15.6" FHD/i5-8300H/8GB/1TB HDD/GTX 1050Ti/Linux/2.4 kg)
+                                </div>
+                                <div class="product-item-title--return">
+                                    <span class="product-item-title--return-icon">
+                                        30
+                                    </span>
+                                    30 Ngày Miễn Phí Trả Hàng
+                                </div>
+                            </div>
+                            <div class="content__body-product-item-title-type">
+                                <div class="product-item-title-type">
+                                    Phân Loại Hàng
+                                    <div class="title-type-icon-down"></div>
+                                    <div class="title-type-icon-up"></div>
+                                </div>
+                                <span class="product-item-title-type-name">Màu Nâu</span>
+                            </div>
+                        </div>
+                        <div class="content__body-product-item-price">24.040.000 ₫</div>
+                        <div class="content__body-product-item-quantity">
+                            <span class="quantity__icon-sub">
+                                <i class="gg-math-minus"></i>
+                            </span>
+                            <input type="text" class="quantity__input" value="1">
+                            <span class="quantity__icon-add">
+                                <i class="gg-math-plus"></i>
+                            </span>
+                        </div>
+                        <div class="content__body-product-item-money">24.040.000 ₫</div>
+                        <div class="content__body-product-item-operation">
+                            <a href="#">
+                                Xóa
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Phần chọn và Mua hàng -->
+            <div class="content__body-buy-item">
+                <div class="select__all-item-to-buy">
+                    <div class="cart__checkbox-box cart__checkbox-box-to-buy">
+                        <!-- Khi click thì kích hoạt  cart__checkbox-box-when-click--all-->
+                        <span class="cart__checkbox-box-when-click--all">
+                            <i class="fas fa-check-square"></i>
+                        </span>
+                    </div>
+                    <div class="quantity__item-to-buy-wrap">
+                        Chọn Tất Cả (<span class="quantity__item-to-buy">4</span>)
+                    </div>
+                    <span class="remove__all-item">Xóa</span>
+                </div>
+                <div class="sum__price-buy-item">
+                    Tổng Thanh Toán (<span class="quantity__item-product">0</span>Sản phẩm):
+                    <div class="sum__price-all-item-product-wrap">
+                        <span>0</span>₫
+                    </div>
+                    <div class="btn__buy-item btn btn__primary">Mua ngay</div>
+                </div>
+            </div>
+
+            <div class="product__maybe-you-like">
+                <div class="product__same-trademark-title-wrap">
+                    <h2 class="product__same-trademark-title">Có thể bạn cũng thích</h2>
+                    <a href="" class="product__same-trademark-title-link">Xem tất cả
+                        <i class="gg-chevron-right1"></i>
+                    </a>
+                </div>
+                <div class="product__same-trademark-list">
+                    <div class="product__same-trademark-item">
+                        <div class="product__same-trademark-item-link-wrap">
+                            <a href="" class="product__same-trademark-item-link">
+                                <div class="product__same-trademark__img">
+                                    <img src="https://lh3.googleusercontent.com/3v4BYiMjCJmWCq5piog6LhIzE0RALT-WYy-zE1aBnspgZn8ih4HnwDsqb7KOZyrv7DS_qBd9ZqCqxTQabnk=w500-rw" alt="">
+                                </div>
+                                <span class="product__same-trademark-name">Laptop Acer Swift 3 SF313-51-56UW (NX.H3ZSV.002) (13.3" FHD/i5-8250U/8GB/256GB SSD/UHD 620/Win10/1.4 kg)</span>
+                                <span class="product__same-trademark-quantity">Chỉ còn 3 sản phẩm</span>
+                            </a>
+                        </div>
+                        <div class="product__same-trademark-price">26.490.000 ₫</div>
+                    </div>
+                    <div class="product__same-trademark-item">
+                        <div class="product__same-trademark-item-link-wrap">
+                            <a href="" class="product__same-trademark-item-link">
+                                <div class="product__same-trademark__img">
+                                    <img src="https://lh3.googleusercontent.com/Fuq0U3tS6kLgZ1B0aMlLuHkxsXvaztB3kl8WFzmFQ2n1wbxiGDOtm9IfTlF1k2QnnLOJdf7E-a_515Lf2rxM4fxfAI6OOnsW=w500-rw" alt="">
+                                    <div class="product__same-trademark__promotion">
+                                        <div class="product__same-trademark__promotion-title">TIẾT KIỆM</div>
+                                        <div class="product__same-trademark__promotion-value">500.000 ₫</div>
+                                    </div>
+                                </div>
+                                <span class="product__same-trademark-name">Laptop ASUS Zenbook UX363EA- HP130T ( 13.3 inch/Full HD/Intel EVO Core i5-1135G7/8GB/512GB SSD/Windows 10 Home 64-bit/1.3kg)</span>
+                                <span class="product__same-trademark-quantity">Chỉ còn 1 sản phẩm</span>
+                            </a>
+                        </div>
+                        <div class="product__same-trademark-price">
+                            <div class="product__same-trademark-price-new">27.490.000 ₫
+                                <span class="product__same-trademark-price-span">
+                                    free
+                                    <i class="fas fa-shipping-fast"></i>
+                                </span>
+                            </div>
+                            <div class="product__same-trademark-price-old">27.990.000 ₫</div>
+                        </div>
+                    </div>
+                    <div class="product__same-trademark-item">
+                        <div class="product__same-trademark-item-link-wrap">
+                            <a href="" class="product__same-trademark-item-link">
+                                <div class="product__same-trademark__img">
+                                    <img src="https://lh3.googleusercontent.com/l3ISLFn1M4iwawX4PsB3VSbDXYoMEw5KqNh7v_2WxN-rIyEcLMs3QL567GTtSglEpS-tVT8JXq8776S1xfSw45AGdE_CwpDr=w500-rw" alt="">
+                                    <div class="product__same-trademark__promotion">
+                                        <div class="product__same-trademark__promotion-title">TIẾT KIỆM</div>
+                                        <div class="product__same-trademark__promotion-value">1.000.000 ₫</div>
+                                    </div>
+                                </div>
+                                <span class="product__same-trademark-name">Laptop Dell Vostro 14 3405 V4R53500U003W ( 14" Full HD/AMD Ryzen 5 3500U/8GB/512GB SSD/Windows 10 Home SL 64-bit/1.7kg)</span>
+                                <span class="product__same-trademark-quantity">Chỉ còn 2 sản phẩm</span>
+                            </a>
+                        </div>
+                        <div class="product__same-trademark-price">
+                            <div class="product__same-trademark-price-new">17.490.000 ₫
+                                <span class="product__same-trademark-price-span">
+                                    free
+                                    <i class="fas fa-shipping-fast"></i>
+                                </span>
+                            </div>
+                            <div class="product__same-trademark-price-old">18.490.000 ₫</div>
+                        </div>
+                    </div>
+                    <div class="product__same-trademark-item">
+                        <div class="product__same-trademark-item-link-wrap">
+                            <a href="" class="product__same-trademark-item-link">
+                                <div class="product__same-trademark__img">
+                                    <img src="https://lh3.googleusercontent.com/7XuztPXbTsXtZY9K-bi6wSN-FiMqbhqfZFf2l7DXoJD65fo_1PT2dgEy1zAss1KVo-FPglY-WKP-8rDsQE9K85FFqGW3Ht4=w500-rw" alt="">
+                                </div>
+                                <span class="product__same-trademark-name">Laptop ACER Nitro 5 AN515-45-R3SM (NH.QBMSV.005) ( 15.6" Full HD/ 144Hz/AMD Ryzen 5 5600H/8GB/512GB SSD/NVIDIA GeForce GTX 1650/Windows 10 Home 64-bit/2.2kg)</span>
+                                <span class="product__same-trademark-quantity">Chỉ còn 2 sản phẩm</span>
+                            </a>
+                        </div>
+                        <div class="product__same-trademark-price">
+                            <div class="product__same-trademark-price-new">23.490.000 ₫
+                                <span class="product__same-trademark-price-span">
+                                    free
+                                    <i class="fas fa-shipping-fast"></i>
+                                </span>
+                            </div>
+                            <div class="product__same-trademark-price-old"></div>
+                        </div>
+                    </div>
+                    <div class="product__same-trademark-item">
+                        <div class="product__same-trademark-item-link-wrap">
+                            <a href="" class="product__same-trademark-item-link">
+                                <div class="product__same-trademark__img">
+                                    <img src="https://lh3.googleusercontent.com/LFgX6gRnHYEBcxikfBN-QlQF2vpQY7XZi623LEUyJO5IXTaeDtLHUitIVHAPwLmHbeski-Q9jVVwN7E8jUy1e1LexvdDocQ=w500-rw" alt="">
+                                    <div class="product__same-trademark__promotion">
+                                        <div class="product__same-trademark__promotion-title">TIẾT KIỆM</div>
+                                        <div class="product__same-trademark__promotion-value">3.000.000 ₫</div>
+                                    </div>
+                                </div>
+                                <span class="product__same-trademark-name">Laptop ASUS ROG Strix Scar 15 G533QR-HQ098T ( 15.6" Quad HD (2K)/ 165Hz/AMD Ryzen 9 5900HX/16GB/1TB SSD/NVIDIA GeForce RTX 3070/Windows 10 Home 64-bit/2.3kg)</span>
+                                <span class="product__same-trademark-quantity">Chỉ còn 3 sản phẩm</span>
+                            </a>
+                        </div>
+                        <div class="product__same-trademark-price">
+                            <div class="product__same-trademark-price-new">56.990.000 ₫
+                                <span class="product__same-trademark-price-span">
+                                    free
+                                    <i class="fas fa-shipping-fast"></i>
+                                </span>
+                            </div>
+                            <div class="product__same-trademark-price-old">59.990.000 ₫</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev swiper-button-disabled"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <!-- Modal cart -->
+    <div id="modal__cart">
+        <div id="modal__overlay-cart"></div>
+        <div id="modal__overlay-cart-bold"></div>
+        <div class="modal__body-cart">
+            <div class="show__notification-remove">
+                <div class="notification-remove--title">
+                    Bạn có muốn bỏ
+                    <span class="notification-remove--title-quantity">1</span>sản phẩm ?
+                </div>
+                <div class="notification-remove--button">
+                    <div class="btn__notification-remove btn btn__primary">Trở Lại</div>
+                    <div class="btn__notification-remove btn btn__normal">có</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
